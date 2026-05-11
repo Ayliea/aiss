@@ -4,6 +4,20 @@ All notable changes to the Ayliea AI Security Standard are documented in this fi
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows semantic versioning as described in [governance.md](./governance.md).
 
+## [1.2.2] — 2026-05-11
+
+**Status:** Released
+
+First vertical industry crosswalk: cyber-insurance underwriting for healthcare. No changes to the normative spec (sub-controls and scoring unchanged from v1.2.1).
+
+### Added
+
+- `crosswalks/healthcare-cyber-insurance.md` — AISS sub-controls mapped to typical cyber-insurance underwriting questions for healthcare organizations adopting AI. Carrier-neutral (Coalition, At-Bay, Travelers, Beazley, Chubb, Hiscox baseline). Sourced from public broker materials + NAIC bulletins. Submitable evidence package for AI section of healthcare cyber applications.
+
+### Changed
+
+- `README.md` — directory layout now distinguishes framework crosswalks (peer-standard reverse mappings) from industry-profile crosswalks (vertical-specific application contexts).
+
 ## [1.2.1] — 2026-05-11
 
 **Status:** Released
