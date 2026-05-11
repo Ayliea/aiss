@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security disclosure (private)
+    url: https://github.com/Ayliea/aiss/security/policy
+    about: For a security issue in the AISS standard itself (a control that is wrong, dangerous, or misleading), use private disclosure — do not file a public issue. See SECURITY.md.
+  - name: GitHub Discussions
+    url: https://github.com/Ayliea/aiss/discussions
+    about: Open-ended questions, interpretation discussions, or community show-and-tell.
+  - name: AISS website
+    url: https://ayliea.com/methodology
+    about: Read the methodology overview and assessment lifecycle.

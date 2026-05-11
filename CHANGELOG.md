@@ -4,9 +4,29 @@ All notable changes to the Ayliea AI Security Standard are documented in this fi
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows semantic versioning as described in [governance.md](./governance.md).
 
+## [1.2.1] — 2026-05-11
+
+**Status:** Released
+
+Governance scaffolding addition. No changes to the standard's normative content (spec, controls, methodology, crosswalks unchanged from v1.2).
+
+### Added
+
+- `CONTRIBUTING.md` — full RFC workflow, versioning rules, contribution licensing, attribution policy.
+- `CODE_OF_CONDUCT.md` — adopts Contributor Covenant 2.1.
+- `SECURITY.md` — private disclosure process for security issues in the standard itself, with explicit scope and SLAs.
+- `rfcs/` directory with `README.md`, RFC template (`0000-template.md`), and the first retroactive RFC ([`0001-aiss-v1.2-ratification.md`](./rfcs/0001-aiss-v1.2-ratification.md)).
+- `.github/ISSUE_TEMPLATE/` — four issue forms covering RFC control changes, RFC crosswalks, errata, and clarifications, plus a `config.yml` routing security reports to the private channel.
+- `.github/PULL_REQUEST_TEMPLATE.md` for direct PRs.
+
+### Changed
+
+- `README.md` — added "How to contribute" table, updated directory layout, removed Release-Candidate status (now Released).
+- `governance.md` — security-disclosure subsection now references `SECURITY.md` for the full policy.
+
 ## [1.2] — 2026-05
 
-**Status:** Release Candidate
+**Status:** Released
 
 Substantive content additions addressing OWASP LLM06 (Excessive Agency), LLM08 (Vector and Embedding Weaknesses), and EU AI Act Article 50 obligations. NIST AI 600-1 (Generative AI Profile) mappings added to all sub-controls. Authoritative ATLAS technique catalog refreshed to v5.6. Editorial and citation hygiene improvements.
 

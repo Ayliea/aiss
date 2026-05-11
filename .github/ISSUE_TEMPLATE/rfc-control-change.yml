@@ -1,0 +1,96 @@
+name: "RFC — Control change (new / modify / split / merge)"
+description: Propose a change to an AISS control. Required for new controls or any semantic change to existing ones.
+title: "[RFC] AC-?.?: <short summary>"
+labels: ["rfc", "rfc/control-change", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing an AISS control change. RFCs are the formal route for new controls, semantic edits, scope changes, and structural refactors. See [CONTRIBUTING.md](https://github.com/Ayliea/aiss/blob/main/CONTRIBUTING.md) for the full process.
+
+        **Not an RFC?** Use the *Errata* template for typos/citation fixes or the *Clarification* template for rewording without semantic change.
+
+  - type: input
+    id: controls
+    attributes:
+      label: AISS control(s) affected
+      description: Comma-separated list. Use `AC-N` for new domains, `AC-N.X` for sub-controls, or `NEW` if proposing a new control without a chosen ID.
+      placeholder: "AC-3.7, AC-3.8, NEW"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change type
+      options:
+        - New control (introduce a sub-control or domain)
+        - Modify existing control (semantic change)
+        - Split (one control becomes multiple)
+        - Merge (multiple controls collapse into one)
+        - Remove (deprecate existing control)
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_text
+    attributes:
+      label: Proposed control text
+      description: Write the proposed control wording as it should appear in the spec. Use the same voice as existing AISS controls (declarative, testable, non-vendor-specific).
+      placeholder: |
+        AC-3.7 The organization SHALL ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this change needed? Cite authoritative sources where applicable — NIST AI 600-1 control IDs, OWASP LLM Top 10 entries, MITRE ATLAS technique IDs, EU AI Act article numbers, peer-reviewed research, or documented production incidents.
+      placeholder: |
+        - Maps to NIST AI 600-1 MS-2.5-001
+        - Addresses OWASP LLM07 (Insecure Plugin Design)
+        - Cited in <paper / incident / standard>
+    validations:
+      required: true
+
+  - type: textarea
+    id: backwards_compat
+    attributes:
+      label: Backwards compatibility impact
+      description: Will existing assessments scored against this control retain meaningful comparability? If a control ID is renumbered or removed, describe the migration path.
+      placeholder: |
+        - Existing AC-3.6 assessments remain valid; new sub-control is additive
+        - Or: AC-3.6 is renamed; question_published_versions snapshot preserves historical text
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_guidance
+    attributes:
+      label: Implementation guidance change required
+      description: If accepted, what changes need to land beyond the control text — assessment question wording, crosswalk entries, MITRE ATLAS mappings, methodology document, in-app rendering?
+      placeholder: |
+        - Add question in `packages/shared-assess/src/constants/frameworks/ai-security.ts`
+        - Add ATLAS mapping in `atlas-mappings.ts`
+        - Update `crosswalks/nist-ai-600-1.md`
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches did you weigh? Why is this proposal preferred?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I have read [CONTRIBUTING.md](https://github.com/Ayliea/aiss/blob/main/CONTRIBUTING.md) and understand the RFC workflow.
+          required: true
+        - label: I agree that my contribution will be licensed under CC-BY-4.0 (the same license as AISS).
+          required: true
