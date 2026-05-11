@@ -4,6 +4,16 @@ All notable changes to the Ayliea AI Security Standard are documented in this fi
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows semantic versioning as described in [governance.md](./governance.md).
 
+## [1.2.3] — 2026-05-11
+
+**Status:** Released
+
+Second vertical industry crosswalk: cyber-insurance underwriting for financial services. No changes to the normative spec.
+
+### Added
+
+- `crosswalks/financial-services-cyber-insurance.md` — AISS sub-controls mapped to typical cyber-insurance underwriting questions for financial-services organizations adopting AI. Carrier-neutral baseline. Aligned to NYDFS 23 NYCRR Part 500, EU DORA, SR 11-7 (Fed model risk), OCC Comptroller's Handbook, FINRA Rule 2210 + 3110, and SEC Marketing Rule. Submitable evidence for the AI section of FinServ cyber applications.
+
 ## [1.2.2] — 2026-05-11
 
 **Status:** Released

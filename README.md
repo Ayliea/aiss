@@ -43,7 +43,8 @@ aiss/
 │   └── AC-N-<slug>.md       ← per-domain pages (10 files)
 ├── crosswalks/
 │   ├── <framework>.md       ← reverse mappings to peer frameworks (9 files)
-│   └── healthcare-cyber-insurance.md  ← industry-profile crosswalks (cyber-insurance underwriting)
+│   ├── healthcare-cyber-insurance.md      ← industry-profile crosswalk (cyber-insurance, healthcare)
+│   └── financial-services-cyber-insurance.md  ← industry-profile crosswalk (cyber-insurance, FinServ)
 ├── appendices/
 │   └── ai-service-domains.md
 ├── rfcs/
