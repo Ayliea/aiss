@@ -1,0 +1,42 @@
+name: "Errata — typo, broken link, or citation fix"
+description: Report a non-semantic mistake in AISS. Errata are fast-tracked and do not require RFC review.
+title: "[Errata] <one-line summary>"
+labels: ["errata", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Errata are non-semantic corrections — typos, broken links, citation errors, incorrect dates, malformed JSON, or wording that is unambiguously wrong (not contested interpretation). For semantic changes use an RFC; for ambiguous wording use the *Clarification* template.
+
+  - type: input
+    id: location
+    attributes:
+      label: File path + section
+      description: Where in the standard is the mistake?
+      placeholder: "domains/AC-3-data-protection.md, AC-3.5 paragraph 2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+      description: Quote the exact problematic text.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+      description: What should it say instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Source (if applicable)
+      description: For citation/date errors, link to the authoritative source.
+    validations:
+      required: false

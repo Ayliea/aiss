@@ -1,0 +1,43 @@
+name: "Clarification — ambiguous wording or interpretation question"
+description: Request clarification on existing AISS language without proposing a semantic change.
+title: "[Clarification] <control>: <one-line summary>"
+labels: ["clarification", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when the control text is ambiguous, you encountered two reasonable interpretations during an assessment, or you want the maintainer to disambiguate without semantically changing the control. Resolved clarifications become rewording PRs (no scope change).
+
+        For a semantic change, use the *RFC — Control change* template instead.
+
+  - type: input
+    id: control
+    attributes:
+      label: AISS control
+      placeholder: "AC-3.5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_text
+    attributes:
+      label: Current control text
+      description: Paste the exact current wording.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ambiguity
+    attributes:
+      label: What's ambiguous
+      description: Describe the two (or more) ways this control could reasonably be interpreted.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_resolution
+    attributes:
+      label: Suggested resolution
+      description: How would you reword it to remove ambiguity without changing intent?
+    validations:
+      required: false

@@ -1,0 +1,71 @@
+name: "RFC — Crosswalk addition or update"
+description: Propose a new framework crosswalk, an update to an existing crosswalk, or a corrected mapping reference.
+title: "[RFC] Crosswalk: <framework> <-> AISS"
+labels: ["rfc", "rfc/crosswalk", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Crosswalks map AISS controls to external frameworks (NIST, ISO, EU AI Act, OWASP, MITRE ATLAS, etc.). Use this template to propose adding a new external framework, updating an existing crosswalk, or correcting an incorrect mapping.
+
+  - type: dropdown
+    id: change_kind
+    attributes:
+      label: Change kind
+      options:
+        - New crosswalk (a framework AISS doesn't currently map to)
+        - Update existing crosswalk (add/remove/change mappings)
+        - Correct an incorrect mapping
+    validations:
+      required: true
+
+  - type: input
+    id: framework
+    attributes:
+      label: External framework
+      description: Name + version + publication date. Cite the authoritative URL.
+      placeholder: "ISO/IEC 27001:2022, published 2022-10"
+    validations:
+      required: true
+
+  - type: input
+    id: source_url
+    attributes:
+      label: Authoritative source URL
+      description: Link to the framework's canonical reference (standards body page, official PDF, etc.). Do not link to summaries or vendor blog posts.
+      placeholder: "https://www.iso.org/standard/27001"
+    validations:
+      required: true
+
+  - type: textarea
+    id: mapping_table
+    attributes:
+      label: Proposed mapping
+      description: |
+        Provide the full mapping as a Markdown table. Use the format used in `crosswalks/*.md` files. Cite the exact clause ID for each external reference.
+      value: |
+        | AISS Domain | External Reference(s) | Notes |
+        |---|---|---|
+        | AC-1 | <clause IDs> | <1:1, 1:many, partial overlap, etc.> |
+        | AC-2 | <clause IDs> | |
+        | AC-3 | <clause IDs> | |
+    validations:
+      required: true
+
+  - type: textarea
+    id: gaps
+    attributes:
+      label: Notable gaps or partial overlaps
+      description: Where does AISS go beyond this framework, or vice versa? Be explicit about coverage gaps — auditors rely on the crosswalk to know what AISS does and does not cover.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I have used the framework's normative text, not third-party summaries or training data.
+          required: true
+        - label: I agree that my contribution will be licensed under CC-BY-4.0.
+          required: true
