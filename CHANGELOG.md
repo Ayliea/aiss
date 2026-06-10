@@ -4,53 +4,21 @@ All notable changes to the Ayliea AI Security Standard are documented in this fi
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows semantic versioning as described in [governance.md](./governance.md).
 
-## [1.2.3] — 2026-05-11
+## [1.3] — 2026-06
 
-**Status:** Released
+**Status:** Release Candidate
 
-Second vertical industry crosswalk: cyber-insurance underwriting for financial services. No changes to the normative spec.
-
-### Added
-
-- `crosswalks/financial-services-cyber-insurance.md` — AISS sub-controls mapped to typical cyber-insurance underwriting questions for financial-services organizations adopting AI. Carrier-neutral baseline. Aligned to NYDFS 23 NYCRR Part 500, EU DORA, SR 11-7 (Fed model risk), OCC Comptroller's Handbook, FINRA Rule 2210 + 3110, and SEC Marketing Rule. Submitable evidence for the AI section of FinServ cyber applications.
-
-## [1.2.2] — 2026-05-11
-
-**Status:** Released
-
-First vertical industry crosswalk: cyber-insurance underwriting for healthcare. No changes to the normative spec (sub-controls and scoring unchanged from v1.2.1).
+Curation release. Added AC-1.7 (AI Risk Assessment, SHALL), AC-4.6 (AI Integration Controls, SHOULD), and AC-5.6 (AI Vendor Monitoring, SHOULD) to align the published standard with the assessment platform's coverage. These promote three distinct, auditable controls; framework crosswalks for the new controls are conservative and pending maintainer enrichment. No existing controls were removed or renumbered.
 
 ### Added
 
-- `crosswalks/healthcare-cyber-insurance.md` — AISS sub-controls mapped to typical cyber-insurance underwriting questions for healthcare organizations adopting AI. Carrier-neutral (Coalition, At-Bay, Travelers, Beazley, Chubb, Hiscox baseline). Sourced from public broker materials + NAIC bulletins. Submitable evidence package for AI section of healthcare cyber applications.
-
-### Changed
-
-- `README.md` — directory layout now distinguishes framework crosswalks (peer-standard reverse mappings) from industry-profile crosswalks (vertical-specific application contexts).
-
-## [1.2.1] — 2026-05-11
-
-**Status:** Released
-
-Governance scaffolding addition. No changes to the standard's normative content (spec, controls, methodology, crosswalks unchanged from v1.2).
-
-### Added
-
-- `CONTRIBUTING.md` — full RFC workflow, versioning rules, contribution licensing, attribution policy.
-- `CODE_OF_CONDUCT.md` — adopts Contributor Covenant 2.1.
-- `SECURITY.md` — private disclosure process for security issues in the standard itself, with explicit scope and SLAs.
-- `rfcs/` directory with `README.md`, RFC template (`0000-template.md`), and the first retroactive RFC ([`0001-aiss-v1.2-ratification.md`](./rfcs/0001-aiss-v1.2-ratification.md)).
-- `.github/ISSUE_TEMPLATE/` — four issue forms covering RFC control changes, RFC crosswalks, errata, and clarifications, plus a `config.yml` routing security reports to the private channel.
-- `.github/PULL_REQUEST_TEMPLATE.md` for direct PRs.
-
-### Changed
-
-- `README.md` — added "How to contribute" table, updated directory layout, removed Release-Candidate status (now Released).
-- `governance.md` — security-disclosure subsection now references `SECURITY.md` for the full policy.
+- AC-1.7 — AI Risk Assessment (SHALL). Distinct from AC-1.3 suitability screening; characterizes residual deployment risk. Maps to NIST CSF ID.RA, EU AI Act Art. 9.
+- AC-4.6 — AI Integration Controls (SHOULD). Governs which AI tools/agents may connect to internal systems; distinct from AC-4.1 user access.
+- AC-5.6 — AI Vendor Monitoring (SHOULD). Ongoing vendor advisory/sub-processor monitoring; distinct from AC-5.1 point-in-time assessment and AC-5.5 continuity.
 
 ## [1.2] — 2026-05
 
-**Status:** Released
+**Status:** Release Candidate
 
 Substantive content additions addressing OWASP LLM06 (Excessive Agency), LLM08 (Vector and Embedding Weaknesses), and EU AI Act Article 50 obligations. NIST AI 600-1 (Generative AI Profile) mappings added to all sub-controls. Authoritative ATLAS technique catalog refreshed to v5.6. Editorial and citation hygiene improvements.
 

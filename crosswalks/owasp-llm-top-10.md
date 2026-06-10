@@ -1,6 +1,6 @@
 # AISS ↔ OWASP LLM Top 10 (2025) Crosswalk
 
-This crosswalk maps AISS sub-controls to **OWASP LLM Top 10 (2025)** requirements. For the forward direction (OWASP LLM Top 10 (2025) → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.2.json](../spec/aiss-v1.2.json).
+This crosswalk maps AISS sub-controls to **OWASP LLM Top 10 (2025)** requirements. For the forward direction (OWASP LLM Top 10 (2025) → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.3.json](../spec/aiss-v1.3.json).
 
 ## Mappings
 

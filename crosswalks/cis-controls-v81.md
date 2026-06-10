@@ -1,6 +1,6 @@
 # AISS ↔ CIS Controls v8.1 Crosswalk
 
-This crosswalk maps AISS sub-controls to **CIS Controls v8.1** requirements. For the forward direction (CIS Controls v8.1 → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.2.json](../spec/aiss-v1.2.json).
+This crosswalk maps AISS sub-controls to **CIS Controls v8.1** requirements. For the forward direction (CIS Controls v8.1 → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.3.json](../spec/aiss-v1.3.json).
 
 ## Mappings
 
@@ -30,11 +30,13 @@ This crosswalk maps AISS sub-controls to **CIS Controls v8.1** requirements. For
 | AC-4.3 | Privileged Access Management for AI | SHALL | CIS 5, CIS 6 |
 | AC-4.4 | API Key and Secret Management | SHALL | CIS 5, CIS 6 |
 | AC-4.5 | AI Access Review and Recertification | SHALL | CIS 5, CIS 6 |
+| AC-4.6 | AI Integration Controls | SHOULD | CIS 3, CIS 6 |
 | AC-5.1 | AI Vendor Risk Assessment | SHALL | CIS 15 |
 | AC-5.2 | Contractual Data Protection Terms | SHALL | CIS 15 |
 | AC-5.3 | Model Provenance Verification | SHALL | CIS 15, CIS 16 |
 | AC-5.4 | Third-Party AI Security Monitoring | SHALL | CIS 15 |
 | AC-5.5 | Vendor Termination and Data Return | SHALL | CIS 15 |
+| AC-5.6 | AI Vendor Monitoring | SHOULD | CIS 15 |
 | AC-6.6 | Synthetic Content Provenance and Marking | SHALL | CIS 3 |
 | AC-7.1 | AI-Specific Incident Response Playbooks | SHALL | CIS 17 |
 | AC-7.2 | AI Incident Escalation and Communication | SHALL | CIS 17 |

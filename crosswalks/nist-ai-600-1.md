@@ -1,6 +1,6 @@
 # AISS ↔ NIST AI 600-1 (GAI Profile) Crosswalk
 
-This crosswalk maps AISS sub-controls to **NIST AI 600-1 (GAI Profile)** requirements. For the forward direction (NIST AI 600-1 (GAI Profile) → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.2.json](../spec/aiss-v1.2.json).
+This crosswalk maps AISS sub-controls to **NIST AI 600-1 (GAI Profile)** requirements. For the forward direction (NIST AI 600-1 (GAI Profile) → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.3.json](../spec/aiss-v1.3.json).
 
 ## Mappings
 

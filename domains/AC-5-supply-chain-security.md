@@ -1,10 +1,10 @@
 # AC-5 — AI Supply Chain Security
 
-**Control count:** 5
+**Control count:** 6
 
 ## Overview
 
-This domain covers AC-5 sub-controls in the Ayliea AI Security Standard. See the [machine-readable spec](../spec/aiss-v1.2.json) for the canonical definition.
+This domain covers AC-5 sub-controls in the Ayliea AI Security Standard. See the [machine-readable spec](../spec/aiss-v1.3.json) for the canonical definition.
 
 ## Sub-controls
 
@@ -191,6 +191,40 @@ This domain covers AC-5 sub-controls in the Ayliea AI Security Standard. See the
 | ISO 27001:2022 | A.5.20, A.8.10 |
 | EU AI Act | Art. 16, 25 |
 | MITRE ATLAS | AML.T0109 |
+
+---
+
+### AC-5.6 — AI Vendor Monitoring (SHOULD)
+
+**Requirement:** The organization SHOULD monitor its AI vendors on an ongoing basis for security advisories, sub-processor and data-handling changes, and material service or policy updates, and SHOULD assign accountability for reviewing and acting on those changes.
+
+**Assessment question:** Does the organization monitor AI vendor security advisories, sub-processor changes, and material service or policy updates on an ongoing basis, with assigned accountability for review and action?
+
+**Implementation guidance:** Vendor monitoring is distinct from the point-in-time vendor risk assessment (AC-5.1) and from continuity and exit planning (AC-5.5): it is the continuous watch on a vendor's evolving posture. Subscribe to each material vendor's security advisories, changelogs, sub-processor lists, and status pages; assign a named owner per vendor; and define a path to act on critical changes (for example, a sub-processor addition that changes data residency, or a policy change to model-training use of customer data). The depth of monitoring should be proportional to the data sensitivity and business criticality of the AI service.
+
+**Testing procedure:**
+
+1. Obtain the list of monitored AI vendors and the assigned owner for each
+2. Verify subscriptions to vendor advisory feeds, changelogs, or sub-processor notification mechanisms
+3. Select three vendors and review a sample of recent advisories or changes with documented review and action notes
+4. Confirm a defined path exists to act on critical vendor changes (e.g., sub-processor or data-handling changes)
+5. Verify that monitoring depth is proportional to the data sensitivity of each AI service
+
+**Evidence requirements:**
+
+- List of monitored AI vendors with a named owner per vendor
+- Subscription records to advisory feeds, changelogs, or sub-processor notifications
+- Sample of recent vendor advisories or changes reviewed with action notes
+- Procedure for responding to critical vendor changes
+
+**Framework mappings:**
+
+| Framework | References |
+|---|---|
+| NIST CSF 2.0 | GV.SC-07 |
+| NIST AI RMF | Govern 6.1, Manage 4.1 |
+| CIS Controls v8.1 | CIS 15 |
+| ISO 27001:2022 | A.5.22 |
 
 ---
 

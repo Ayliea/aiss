@@ -33,4 +33,4 @@ A sub-control MAY be declared Not Applicable (N/A) when the organization can doc
 
 ## Reproducing a score
 
-Any AISS score should be reproducible by reading the assessment's recorded answers, mapping each to its point value using `spec/aiss-v1.2.json`, computing per-domain weighted averages, and computing the overall weighted average. If your reproduction does not match the platform's displayed score, that is a bug — report it via the RFC channel in [governance.md](./governance.md).
+Any AISS score should be reproducible by reading the assessment's recorded answers, mapping each to its point value using `spec/aiss-v1.3.json`, computing per-domain weighted averages, and computing the overall weighted average. If your reproduction does not match the platform's displayed score, that is a bug — report it via the RFC channel in [governance.md](./governance.md).

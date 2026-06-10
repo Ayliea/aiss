@@ -1,6 +1,6 @@
 # AISS ↔ NIST AI RMF Crosswalk
 
-This crosswalk maps AISS sub-controls to **NIST AI RMF** requirements. For the forward direction (NIST AI RMF → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.2.json](../spec/aiss-v1.2.json).
+This crosswalk maps AISS sub-controls to **NIST AI RMF** requirements. For the forward direction (NIST AI RMF → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.3.json](../spec/aiss-v1.3.json).
 
 ## Mappings
 
@@ -12,6 +12,7 @@ This crosswalk maps AISS sub-controls to **NIST AI RMF** requirements. For the f
 | AC-1.4 | AI Ethics and Responsible Use Guidelines | SHALL | Govern 1.6, 1.7, Map 1.5 |
 | AC-1.5 | AI Policy Review and Maintenance Cadence | SHALL | Govern 1.2, 5.1, 5.2 |
 | AC-1.6 | Regulatory Compliance Program | SHALL | Govern 1.1, 1.2 |
+| AC-1.7 | AI Risk Assessment | SHALL | Govern 1.3, Map 1.1, Measure 2.1 |
 | AC-2.1 | AI Asset Inventory | SHALL | Map 1.1, 1.5, 1.6 |
 | AC-2.2 | AI Asset Classification | SHALL | Map 1.1, 1.5, 2.1 |
 | AC-2.3 | AI Asset Ownership Assignment | SHALL | Govern 2.1, 2.3 |
@@ -30,11 +31,13 @@ This crosswalk maps AISS sub-controls to **NIST AI RMF** requirements. For the f
 | AC-4.3 | Privileged Access Management for AI | SHALL | Govern 4.1, Manage 1.3 |
 | AC-4.4 | API Key and Secret Management | SHALL | Govern 4.1 |
 | AC-4.5 | AI Access Review and Recertification | SHALL | Govern 4.1 |
+| AC-4.6 | AI Integration Controls | SHOULD | Manage 2.1 |
 | AC-5.1 | AI Vendor Risk Assessment | SHALL | Govern 6.1, 6.2, Map 3.4 |
 | AC-5.2 | Contractual Data Protection Terms | SHALL | Govern 6.1, 6.2 |
 | AC-5.3 | Model Provenance Verification | SHALL | Map 1.1, 1.5, 2.1 |
 | AC-5.4 | Third-Party AI Security Monitoring | SHALL | Govern 6.2, Manage 4.1 |
 | AC-5.5 | Vendor Termination and Data Return | SHALL | Govern 6.2, Manage 2.4 |
+| AC-5.6 | AI Vendor Monitoring | SHOULD | Govern 6.1, Manage 4.1 |
 | AC-6.1 | Human Review Processes for High-Risk AI Outputs | SHALL | Measure 2.6, 2.7, 2.11 |
 | AC-6.2 | Accuracy and Hallucination Monitoring | SHALL | Measure 1.1, 2.3, 2.6 |
 | AC-6.3 | Bias Detection and Mitigation | SHALL | Measure 2.6, 2.10, 2.11 |

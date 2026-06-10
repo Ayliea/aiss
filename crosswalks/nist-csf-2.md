@@ -1,6 +1,6 @@
 # AISS ↔ NIST CSF 2.0 Crosswalk
 
-This crosswalk maps AISS sub-controls to **NIST CSF 2.0** requirements. For the forward direction (NIST CSF 2.0 → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.2.json](../spec/aiss-v1.2.json).
+This crosswalk maps AISS sub-controls to **NIST CSF 2.0** requirements. For the forward direction (NIST CSF 2.0 → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.3.json](../spec/aiss-v1.3.json).
 
 ## Mappings
 
@@ -12,6 +12,7 @@ This crosswalk maps AISS sub-controls to **NIST CSF 2.0** requirements. For the 
 | AC-1.4 | AI Ethics and Responsible Use Guidelines | SHALL | GV.OC-04, GV.PO-01 |
 | AC-1.5 | AI Policy Review and Maintenance Cadence | SHALL | GV.PO-02, ID.IM-02 |
 | AC-1.6 | Regulatory Compliance Program | SHALL | GV.OC-03, GV.OC-05 |
+| AC-1.7 | AI Risk Assessment | SHALL | ID.RA-01, ID.RA-04, ID.RA-05 |
 | AC-2.1 | AI Asset Inventory | SHALL | ID.AM-01, ID.AM-02 |
 | AC-2.2 | AI Asset Classification | SHALL | ID.AM-01, ID.AM-05 |
 | AC-2.3 | AI Asset Ownership Assignment | SHALL | ID.AM-01, GV.RR-02 |
@@ -30,11 +31,13 @@ This crosswalk maps AISS sub-controls to **NIST CSF 2.0** requirements. For the 
 | AC-4.3 | Privileged Access Management for AI | SHALL | PR.AA-05 |
 | AC-4.4 | API Key and Secret Management | SHALL | PR.AA-02, PR.DS-01 |
 | AC-4.5 | AI Access Review and Recertification | SHALL | PR.AA-05 |
+| AC-4.6 | AI Integration Controls | SHOULD | PR.AA-05, ID.AM-03 |
 | AC-5.1 | AI Vendor Risk Assessment | SHALL | GV.SC-03, GV.SC-04, GV.SC-07 |
 | AC-5.2 | Contractual Data Protection Terms | SHALL | GV.SC-05, GV.SC-06 |
 | AC-5.3 | Model Provenance Verification | SHALL | GV.SC-07, ID.AM-01 |
 | AC-5.4 | Third-Party AI Security Monitoring | SHALL | GV.SC-09, GV.SC-10 |
 | AC-5.5 | Vendor Termination and Data Return | SHALL | GV.SC-08 |
+| AC-5.6 | AI Vendor Monitoring | SHOULD | GV.SC-07 |
 | AC-6.1 | Human Review Processes for High-Risk AI Outputs | SHALL | GV.OC-04 |
 | AC-6.2 | Accuracy and Hallucination Monitoring | SHALL | GV.OC-04 |
 | AC-6.3 | Bias Detection and Mitigation | SHALL | GV.OC-04 |

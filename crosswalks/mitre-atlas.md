@@ -1,6 +1,6 @@
 # AISS ↔ MITRE ATLAS Crosswalk
 
-This crosswalk maps AISS sub-controls to **MITRE ATLAS** requirements. For the forward direction (MITRE ATLAS → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.2.json](../spec/aiss-v1.2.json).
+This crosswalk maps AISS sub-controls to **MITRE ATLAS** requirements. For the forward direction (MITRE ATLAS → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.3.json](../spec/aiss-v1.3.json).
 
 ## Mappings
 

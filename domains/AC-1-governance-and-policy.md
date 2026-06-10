@@ -1,10 +1,10 @@
 # AC-1 — AI Governance and Policy
 
-**Control count:** 6
+**Control count:** 7
 
 ## Overview
 
-This domain covers AC-1 sub-controls in the Ayliea AI Security Standard. See the [machine-readable spec](../spec/aiss-v1.2.json) for the canonical definition.
+This domain covers AC-1 sub-controls in the Ayliea AI Security Standard. See the [machine-readable spec](../spec/aiss-v1.3.json) for the canonical definition.
 
 ## Sub-controls
 
@@ -227,6 +227,39 @@ This domain covers AC-1 sub-controls in the Ayliea AI Security Standard. See the
 | ISO 27001:2022 | A.5.31, A.5.36 |
 | EU AI Act | Art. 8, 9, 16, 17 |
 | Colorado AI Act | §6-1-1702, 1703 |
+
+---
+
+### AC-1.7 — AI Risk Assessment (SHALL)
+
+**Requirement:** The organization SHALL conduct a documented AI risk assessment for each AI tool or use case prior to deployment and on material change, evaluating data exposure, output reliability (including bias and hallucination), vendor trust, and regulatory impact.
+
+**Assessment question:** Does the organization conduct a documented AI risk assessment for each AI tool or use case prior to deployment and on material change, evaluating data exposure, output reliability, vendor trust, and regulatory impact?
+
+**Implementation guidance:** AI risk assessment is distinct from suitability screening (AC-1.3): suitability decides whether AI is appropriate for a process, while risk assessment characterizes the residual risk of a specific deployment and drives mitigations. A lightweight template proportional to data sensitivity and decision impact is sufficient for most mid-market deployments; it should capture the data classifications involved, failure modes (hallucination, bias, prompt injection), vendor and sub-processor exposure, and applicable regulatory obligations (e.g., sector privacy law, EU AI Act risk tier). High-impact use cases warrant deeper analysis and named, documented risk acceptance.
+
+**Testing procedure:**
+
+1. Obtain the AI risk assessment template or methodology
+2. Verify that the methodology evaluates data exposure, output reliability (bias and hallucination), vendor trust, and regulatory impact
+3. Select three AI deployments and confirm a risk assessment was completed prior to deployment
+4. Verify that risk assessments are refreshed on material change to the tool, data, or use case
+5. Confirm that assessment results are documented and inform deployment and mitigation decisions
+
+**Evidence requirements:**
+
+- AI risk assessment template or methodology
+- Completed risk assessments for each AI tool or use case
+- Documented risk acceptances with named approvers
+- Records of reassessment on material change
+
+**Framework mappings:**
+
+| Framework | References |
+|---|---|
+| NIST CSF 2.0 | ID.RA-01, ID.RA-04, ID.RA-05 |
+| NIST AI RMF | Govern 1.3, Map 1.1, Measure 2.1 |
+| EU AI Act | Art. 9 |
 
 ---
 

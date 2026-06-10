@@ -1,6 +1,6 @@
 # AISS ↔ EU AI Act Crosswalk
 
-This crosswalk maps AISS sub-controls to **EU AI Act** requirements. For the forward direction (EU AI Act → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.2.json](../spec/aiss-v1.2.json).
+This crosswalk maps AISS sub-controls to **EU AI Act** requirements. For the forward direction (EU AI Act → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.3.json](../spec/aiss-v1.3.json).
 
 ## Mappings
 
@@ -12,6 +12,7 @@ This crosswalk maps AISS sub-controls to **EU AI Act** requirements. For the for
 | AC-1.4 | AI Ethics and Responsible Use Guidelines | SHALL | Art. 4, 13, 14, 15, 27 |
 | AC-1.5 | AI Policy Review and Maintenance Cadence | SHALL | Art. 9(3), 72 |
 | AC-1.6 | Regulatory Compliance Program | SHALL | Art. 8, 9, 16, 17 |
+| AC-1.7 | AI Risk Assessment | SHALL | Art. 9 |
 | AC-2.1 | AI Asset Inventory | SHALL | Art. 11, 12 |
 | AC-2.2 | AI Asset Classification | SHALL | Art. 6, 9 |
 | AC-2.3 | AI Asset Ownership Assignment | SHALL | Art. 9(4) |

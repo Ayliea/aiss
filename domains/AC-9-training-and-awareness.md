@@ -4,7 +4,7 @@
 
 ## Overview
 
-This domain covers AC-9 sub-controls in the Ayliea AI Security Standard. See the [machine-readable spec](../spec/aiss-v1.2.json) for the canonical definition.
+This domain covers AC-9 sub-controls in the Ayliea AI Security Standard. See the [machine-readable spec](../spec/aiss-v1.3.json) for the canonical definition.
 
 ## Sub-controls
 

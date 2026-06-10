@@ -1,10 +1,10 @@
 # AC-4 — Access Control for AI
 
-**Control count:** 5
+**Control count:** 6
 
 ## Overview
 
-This domain covers AC-4 sub-controls in the Ayliea AI Security Standard. See the [machine-readable spec](../spec/aiss-v1.2.json) for the canonical definition.
+This domain covers AC-4 sub-controls in the Ayliea AI Security Standard. See the [machine-readable spec](../spec/aiss-v1.3.json) for the canonical definition.
 
 ## Sub-controls
 
@@ -191,6 +191,40 @@ This domain covers AC-4 sub-controls in the Ayliea AI Security Standard. See the
 | EU AI Act | Art. 26 |
 | Colorado AI Act | §6-1-1703(3) |
 | MITRE ATLAS | AML.T0012, AML.T0021 |
+
+---
+
+### AC-4.6 — AI Integration Controls (SHOULD)
+
+**Requirement:** The organization SHOULD maintain an approved-integration list governing which AI tools and agents may connect to internal systems, databases, and APIs, and SHOULD require a security review scoping each integration to least privilege before access is granted.
+
+**Assessment question:** Does the organization restrict which AI tools and agents can connect to internal systems, databases, and APIs through an approved-integration list and a pre-connection security review?
+
+**Implementation guidance:** AI tools and agents that integrate directly with internal data sources (via plugins, connectors, MCP servers, or service accounts) can expose large volumes of organizational data through a single over-permissioned integration. This control governs the AI tool's access to systems and data; user-level access to AI tools is covered by AC-4.1. Maintain an allowlist of approved AI integrations, scope each to least privilege, and require security review of data scope, authentication method, and data-processing location before connection. Re-review integrations periodically and on scope change.
+
+**Testing procedure:**
+
+1. Obtain the approved AI-integration list
+2. Verify that a security review is required before any AI tool or agent is connected to internal systems
+3. Select three AI integrations and confirm each was reviewed and scoped to least privilege
+4. Verify that declined integration requests are documented
+5. Confirm that approved integrations are periodically re-reviewed
+
+**Evidence requirements:**
+
+- Approved AI-integration allowlist
+- Security review records for each integration with data-scope and authentication detail
+- Least-privilege scoping configuration per integration
+- Records of declined integration requests
+
+**Framework mappings:**
+
+| Framework | References |
+|---|---|
+| NIST CSF 2.0 | PR.AA-05, ID.AM-03 |
+| NIST AI RMF | Manage 2.1 |
+| CIS Controls v8.1 | CIS 3, CIS 6 |
+| ISO 27001:2022 | A.5.15, A.8.3 |
 
 ---
 

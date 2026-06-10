@@ -18,7 +18,7 @@ Full license: [LICENSE](./LICENSE) (CC-BY-4.0)
 
 ### Change proposals (RFC)
 
-Submit a Request for Comment (RFC) via the issue templates at https://github.com/Ayliea/aiss/issues/new/choose. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full workflow, and [`rfcs/`](./rfcs/) for the record of accepted RFCs. RFCs are evaluated against the design rationale, peer-framework coverage, and practitioner feedback. Accepted RFCs are merged in the next minor version and credited in the changelog.
+Submit a Request for Comment (RFC) as a GitHub Issue using the RFC template at https://github.com/Ayliea/aiss/issues/new. RFCs are evaluated against the design rationale, peer-framework coverage, and practitioner feedback. Accepted RFCs are merged in the next minor version and credited by author name in the changelog.
 
 ### Security issues in YOUR AI systems
 
@@ -26,7 +26,7 @@ For security issues you discover in YOUR AI systems while using AISS, follow you
 
 ### Security issues in the standard itself
 
-If you believe an AISS control is incorrect, dangerously misleading, or creates a security risk if followed, see [SECURITY.md](./SECURITY.md) for the private disclosure process, scope, and SLAs.
+If you believe an AISS control is incorrect, dangerously misleading, or creates a security risk by being followed, email security@ayliea.com privately before public disclosure. We will acknowledge within 5 business days.
 
 ### Framework quality issues
 

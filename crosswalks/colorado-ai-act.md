@@ -1,6 +1,6 @@
 # AISS ↔ Colorado AI Act Crosswalk
 
-This crosswalk maps AISS sub-controls to **Colorado AI Act** requirements. For the forward direction (Colorado AI Act → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.2.json](../spec/aiss-v1.2.json).
+This crosswalk maps AISS sub-controls to **Colorado AI Act** requirements. For the forward direction (Colorado AI Act → AISS), refer to the per-control `framework_mappings` field in [spec/aiss-v1.3.json](../spec/aiss-v1.3.json).
 
 ## Mappings
 
