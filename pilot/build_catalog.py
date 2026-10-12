@@ -8,7 +8,7 @@ from criteria import CRITERIA
 ROOT = Path(__file__).resolve().parent
 PINNED = {
     'spec/aiss-v1.3.json': '2601bde5e89d53df8f0c22962b471c369185a3d203506d65f10b121bad91162f',
-    'pilot/sources/rfc-0002.md': 'b3465a2d69adcec61c014e2c4c9f163e6b91571b99c37a843be5e33a24be6ce9',
+    'pilot/sources/rfc-0002.md': 'd37f0a2893ed0e40fedffb4c32d5bc150ad8f09a96ca984e371c27b81461461e',
 }
 
 

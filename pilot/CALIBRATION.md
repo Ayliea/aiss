@@ -3,7 +3,7 @@
 Draft synthetic validation only. No customer evidence, production authorization,
 live scoring, deployed integration or external framework conformance was tested.
 
-Release manifest SHA-256: `dd93d060577532d219abc650993c88ce5f2f1e1c0486e80f7da1904c122a4904`.
+Release manifest SHA-256: `8da4a844edc6dc428680b11c24d518cf34e418a41c89d26a97a0ea4d7f202905`.
 
 Validated 59 control records, 243 draft atomic
 criteria and 59 procedure records. All 23 declared assessment cases and

@@ -1,7 +1,7 @@
 # AI Assurance Methodology — local 2.0 pilot
 
-Draft implementation for RFC 0002. This is a local calibration harness, not a
-published standard, certification engine, production integration or deployed
+Draft implementation for RFC 0002. This is an experimental calibration harness, not an
+adopted standard, certification engine, production integration or deployed
 agent authorization service. Existing v1.3 specifications and scoring stay intact.
 
 Current draft: `2.0.0-pilot.2`, evaluator `pilot.2`, assessment schema `2`.
@@ -55,7 +55,7 @@ and integration tests. Reports explicitly identify these limits.
 
 Files:
 
-- `sources/rfc-0002.md`: private local review snapshot, publication pending.
+- `sources/rfc-0002.md`: published draft proposal snapshot; methodology adoption pending.
 - `criteria.py`: draft criterion interpretation per existing control.
 - `catalog.json`, `procedures.json`, `manifest.json`: generated contracts.
 - `assessment.schema.json`: structural interoperability contract.
@@ -73,3 +73,7 @@ No external framework satisfaction is claimed: the crosswalk evaluator accepts
 synthetic AND/OR evidence conditions only. Real mappings need source and semantic
 validation. Reports cannot authorize risk acceptance, legal conclusions or client
 system actions.
+
+Repository publication was authorized on October 12, 2026. Publishing this draft
+does not close semantic, evidence, professional-assessor or deployment acceptance
+gates. The repository's existing v1.3 specification remains unchanged.

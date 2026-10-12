@@ -18,6 +18,10 @@ AISS publishes its controls, documented assessment methodology, and framework ma
 
 The current methodology documents maturity levels and conformance thresholds. Reproducing a numerical assessment score also requires the versioned answer rubrics, point values, weights, and calculation rules; these are not fully specified in the current public catalog.
 
+## Draft next-version methodology
+
+The [Ayliea AI Assurance Methodology pilot](./pilot/README.md) publishes a draft outcome-first assessment contract, reference evaluator, synthetic cases, and review findings. Its [calibration report](./pilot/CALIBRATION.md) records validation results and remaining acceptance gates. This experimental pilot is not an adopted 2.0 standard or a claim of client, regulatory, or production readiness.
+
 ## How it's structured
 
 - **10 control domains** (AC-1 through AC-10)
