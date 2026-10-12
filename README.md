@@ -1,74 +1,28 @@
-# Ayliea AI Security Standard (AISS)
+# Ayliea AI Assurance Methodology
 
-**Version:** 1.3
-**Status:** Release Candidate
-**Publication Date:** 2026-06
-**License:** [CC-BY-4.0](./LICENSE)
-**Canonical URL:** https://github.com/Ayliea/aiss
+**Open methodology for AI security and governance assessments.**
 
-## What is AISS?
+AISS is the historical name and control identifier. The repository currently contains the historical **v1.3 Release Candidate** and a **draft 2.0 pilot**; the name change does not adopt the draft or change historical assessment results.
 
-A comprehensive control framework for organizational AI security governance, covering 10 domains with 59 sub-controls mapped to normative reference frameworks. Targets mid-market organizations (50-500 employees) deploying generative, predictive, and agentic AI.
+## Start here
 
-AISS is a controls framework purpose-built for organizations deploying generative, predictive, and agentic AI. It complements general-purpose security frameworks (NIST CSF, ISO 27001) with AI-specific controls covering governance, asset management, data protection, access, supply chain, output validation, incident response, monitoring, training, and model security.
+- [Draft methodology pilot](./pilot/README.md): outcome evaluator, assessment contracts, synthetic cases and limitations.
+- [Calibration results](./pilot/CALIBRATION.md): reproducible checks and remaining acceptance gates.
+- [Historical v1.3 catalog](./spec/aiss-v1.3.json): 59 controls across 10 domains.
+- [Historical assessment methodology](./methodology.md) and [domain pages](./domains/AC-1-governance-and-policy.md).
 
-## Why open-source the standard?
+## Transparency and limitations
 
-AISS publishes its controls, documented assessment methodology, and framework mappings. Keeping these materials public lets customers, assessors, and contributors inspect the assessment basis and propose improvements.
+Ayliea publishes its controls, documented assessment approach, proposed mappings and pilot review findings so readers can inspect the assessment basis and propose improvements.
 
-The current methodology documents maturity levels and conformance thresholds. Reproducing a numerical assessment score also requires the versioned answer rubrics, point values, weights, and calculation rules; these are not fully specified in the current public catalog.
+The historical framework mappings are **unvalidated** and must not substantiate framework fulfillment or compliance. Reproducing a numerical v1.3 score requires versioned rubrics, point values, weights and calculation rules that are not fully specified in the public catalog.
 
-## Draft next-version methodology
+The draft pilot is experimental. Synthetic tests establish implementation consistency, not evidence authenticity, assessor calibration, framework conformance, certification, authorization to operate or government readiness. Publication is not methodology adoption.
 
-The [Ayliea AI Assurance Methodology pilot](./pilot/README.md) publishes a draft outcome-first assessment contract, reference evaluator, synthetic cases, and review findings. Its [calibration report](./pilot/CALIBRATION.md) records validation results and remaining acceptance gates. This experimental pilot is not an adopted 2.0 standard or a claim of client, regulatory, or production readiness.
-
-## How it's structured
-
-- **10 control domains** (AC-1 through AC-10)
-- **59 sub-controls** mapped to 11 normative reference frameworks
-- **5-level maturity model** (0 Non-Existent → 4 Managed) with explicit conformance thresholds
-- **Each sub-control has:** requirement, assessment question, implementation guidance, 5-7 step testing procedure, evidence requirements, framework mappings
-
-## Directory layout
-
-```
-aiss/
-├── README.md            ← this file
-├── LICENSE              ← CC-BY-4.0
-├── CHANGELOG.md         ← version history
-├── methodology.md       ← scoring math and maturity model
-├── governance.md        ← who maintains, how to propose changes, RFC process
-├── spec/
-│   └── aiss-v1.3.json   ← machine-readable canonical specification
-├── domains/
-│   └── AC-N-<slug>.md   ← per-domain pages (10 files)
-├── crosswalks/
-│   └── <framework>.md   ← reverse mappings to peer frameworks
-└── appendices/
-    └── ai-service-domains.md  ← curated AI service domain reference
-```
-
-The JSON spec at `spec/aiss-v1.3.json` is the canonical source of truth. The markdown files are deterministically regenerated from it by `scripts/export-aiss-spec.ts`.
-
-## Governance
-
-See [governance.md](./governance.md) for maintainers, license, change-proposal process, and security contact.
-
-## Versioning
-
-- **Current:** v1.3 (released 2026-06)
-- **Status:** Release Candidate
-
-See [CHANGELOG.md](./CHANGELOG.md) for full version history.
-
-## Using AISS
-
-1. **Self-assessment** — Walk through the 59 sub-controls, score each at a maturity level (0-4), document evidence. Conformance baseline = all applicable SHALL sub-controls at ML2+.
-2. **Audit / compliance crosswalk** — Use the per-control framework_mappings to map AISS findings to NIST CSF, ISO 27001, EU AI Act, NIST AI 600-1, or other frameworks an auditor cares about.
-3. **Vendor risk assessment** — Send AISS as a self-assessment questionnaire to AI vendors. The standard's specificity makes it easier to compare vendor responses.
-
-The [Ayliea Assess platform](https://ayliea.com) implements AISS as an in-app assessment with automated scoring, recommendations, and evidence collection — but the standard itself is fully usable on its own.
+Evidence may be reused across applicable frameworks, but each target requires its own scope, applicability, verification and acceptance decision. A source-control result does not automatically fulfill another framework's requirement.
 
 ## Contributing
 
-Pull requests, issues, and RFCs welcome. See [governance.md](./governance.md). Security issues should be reported privately to security@ayliea.com.
+See [CONTRIBUTING.md](./CONTRIBUTING.md), [governance.md](./governance.md) and [CHANGELOG.md](./CHANGELOG.md). Existing control IDs remain traceable. The original project material uses [CC-BY-4.0](./LICENSE); external publications retain their own terms.
+
+Report security issues privately to security@ayliea.com.
