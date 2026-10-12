@@ -1,0 +1,109 @@
+{
+  "assessment_id": "synthetic-inherited-unverified",
+  "manifest_sha256": "82195527601a91559510c8a38856988047597e7381e54029fb7587824ee4e960",
+  "as_of": "2026-10-06",
+  "profile": {
+    "id": "fixture-access-only",
+    "control_ids": [
+      "AC-4.1"
+    ],
+    "scope_kind": "synthetic-subset"
+  },
+  "evidence": [
+    {
+      "id": "ev1",
+      "origin": "inherited",
+      "source": "synthetic-execution-boundary",
+      "provenance": "canary test receipt, fictional",
+      "collected_at": "2026-10-06",
+      "valid_until": "2026-10-07",
+      "confidence": "high",
+      "coverage": [
+        "AC-4.1/R01",
+        "AC-4.1/R02",
+        "AC-4.1/R03"
+      ],
+      "sufficient": true,
+      "available": true,
+      "inheritance": {
+        "scope_verified": false,
+        "period_verified": true,
+        "responsibility_verified": true
+      }
+    }
+  ],
+  "observations": [
+    {
+      "criterion_id": "AC-4.1/R01",
+      "applicability": "applicable",
+      "state": "pass",
+      "evidence_ids": [
+        "ev1"
+      ],
+      "execution": {
+        "procedure_id": "VP-AC-4.1",
+        "scope": "Synthetic fixture resource only",
+        "system_version": "fixture-v1",
+        "population_size": 1,
+        "sample_ids": [
+          "fixture-resource"
+        ],
+        "selection_method": "Full synthetic population",
+        "period_start": "2026-10-06",
+        "period_end": "2026-10-06",
+        "performed_at": "2026-10-06",
+        "assessor": "fixture-assessor",
+        "observations": "Declared synthetic observation; not a real system execution",
+        "limitations": "Synthetic data; no production coverage"
+      }
+    },
+    {
+      "criterion_id": "AC-4.1/R02",
+      "applicability": "applicable",
+      "state": "pass",
+      "evidence_ids": [
+        "ev1"
+      ],
+      "execution": {
+        "procedure_id": "VP-AC-4.1",
+        "scope": "Synthetic fixture resource only",
+        "system_version": "fixture-v1",
+        "population_size": 1,
+        "sample_ids": [
+          "fixture-resource"
+        ],
+        "selection_method": "Full synthetic population",
+        "period_start": "2026-10-06",
+        "period_end": "2026-10-06",
+        "performed_at": "2026-10-06",
+        "assessor": "fixture-assessor",
+        "observations": "Declared synthetic observation; not a real system execution",
+        "limitations": "Synthetic data; no production coverage"
+      }
+    },
+    {
+      "criterion_id": "AC-4.1/R03",
+      "applicability": "applicable",
+      "state": "pass",
+      "evidence_ids": [
+        "ev1"
+      ],
+      "execution": {
+        "procedure_id": "VP-AC-4.1",
+        "scope": "Synthetic fixture resource only",
+        "system_version": "fixture-v1",
+        "population_size": 1,
+        "sample_ids": [
+          "fixture-resource"
+        ],
+        "selection_method": "Full synthetic population",
+        "period_start": "2026-10-06",
+        "period_end": "2026-10-06",
+        "performed_at": "2026-10-06",
+        "assessor": "fixture-assessor",
+        "observations": "Declared synthetic observation; not a real system execution",
+        "limitations": "Synthetic data; no production coverage"
+      }
+    }
+  ]
+}

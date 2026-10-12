@@ -1,0 +1,269 @@
+{
+  "assessment_cases": [
+    {
+      "actual": {
+        "overall": "conformant-to-declared-draft-profile",
+        "parent": "pass"
+      },
+      "case": "pass",
+      "expected": {
+        "overall": "conformant-to-declared-draft-profile",
+        "parent": "pass"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "not-conformant",
+        "parent": "partial"
+      },
+      "case": "mandatory-failure",
+      "expected": {
+        "overall": "not-conformant",
+        "parent": "partial"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "missing-evidence",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "low-confidence",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "stale-evidence",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "deleted-evidence",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "not-tested"
+      },
+      "case": "unperformed",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "not-tested"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "unresolved-scope",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "missing-observation",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "missing-execution",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "no-applicable-mandatory-requirements",
+        "parent": "not-applicable"
+      },
+      "case": "approved-na",
+      "expected": {
+        "overall": "no-applicable-mandatory-requirements",
+        "parent": "not-applicable"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "conformant-to-declared-draft-profile",
+        "parent": "pass"
+      },
+      "case": "inherited-valid",
+      "expected": {
+        "overall": "conformant-to-declared-draft-profile",
+        "parent": "pass"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "inherited-unverified",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "not-conformant",
+        "parent": "partial"
+      },
+      "case": "failure-with-uncertainty",
+      "expected": {
+        "overall": "not-conformant",
+        "parent": "partial"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "conformant-to-declared-draft-profile",
+        "parent": "pass"
+      },
+      "case": "corroborated-medium",
+      "expected": {
+        "overall": "conformant-to-declared-draft-profile",
+        "parent": "pass"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "mapping": "insufficient-evidence",
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "mapping-and",
+      "expected": {
+        "mapping": "insufficient-evidence",
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "mapping": "supported",
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "mapping-or",
+      "expected": {
+        "mapping": "supported",
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "mapping": "insufficient-evidence",
+        "overall": "conformant-to-declared-draft-profile",
+        "parent": "pass"
+      },
+      "case": "mapping-delta",
+      "expected": {
+        "mapping": "insufficient-evidence",
+        "overall": "conformant-to-declared-draft-profile",
+        "parent": "pass"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate"
+      },
+      "case": "full-baseline-incomplete",
+      "expected": {
+        "overall": "indeterminate"
+      },
+      "passed": true
+    }
+  ],
+  "controls": 59,
+  "draft_criteria": 243,
+  "independent_assessor_calibration": false,
+  "manifest_sha256": "82195527601a91559510c8a38856988047597e7381e54029fb7587824ee4e960",
+  "production_validation": false,
+  "risk_matrix": [
+    [
+      "Low",
+      "Low",
+      "Medium",
+      "High"
+    ],
+    [
+      "Low",
+      "Medium",
+      "High",
+      "High"
+    ],
+    [
+      "Medium",
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    [
+      "Medium",
+      "High",
+      "Critical",
+      "Critical"
+    ]
+  ],
+  "status": "synthetic-calibration-only",
+  "test_methods": 16
+}

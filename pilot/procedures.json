@@ -1,0 +1,1544 @@
+{
+  "schema_version": "1",
+  "status": "draft",
+  "procedures": [
+    {
+      "id": "VP-AC-1.1",
+      "control_id": "AC-1.1",
+      "criterion_ids": [
+        "AC-1.1/R01",
+        "AC-1.1/R02",
+        "AC-1.1/R03",
+        "AC-1.1/R04"
+      ],
+      "actions": "Approved AUP, version/approval record and accessible publication; trace permitted/prohibited use, input handling and sanctions.",
+      "acceptance": "All normative topics and executive/board approval present. Missing topic or approval fails that criterion; employee interviews corroborate accessibility without adding a new awareness SHALL.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-1.2",
+      "control_id": "AC-1.2",
+      "criterion_ids": [
+        "AC-1.2/R01",
+        "AC-1.2/R02",
+        "AC-1.2/R03",
+        "AC-1.2/R04"
+      ],
+      "actions": "Charter or named-accountability record; trace deployment approval, risk review and incident escalation authority through actual decisions or exercise.",
+      "acceptance": "All three authorities assigned and exercised as applicable; a sole accountable individual is permitted. Do not require a committee or quarterly meetings absent normative text.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-1.3",
+      "control_id": "AC-1.3",
+      "criterion_ids": [
+        "AC-1.3/R01",
+        "AC-1.3/R02",
+        "AC-1.3/R03",
+        "AC-1.3/R04",
+        "AC-1.3/R05"
+      ],
+      "actions": "Approved risk-appetite statement and enterprise risk context; trace exposure, AI decisions and regulatory thresholds into approval decisions.",
+      "acceptance": "Explicit thresholds and enterprise alignment; generic “low risk” language without decision criteria insufficient.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-1.4",
+      "control_id": "AC-1.4",
+      "criterion_ids": [
+        "AC-1.4/R01",
+        "AC-1.4/R02",
+        "AC-1.4/R03",
+        "AC-1.4/R04",
+        "AC-1.4/R05"
+      ],
+      "actions": "Guidelines and scoped use cases; inspect fairness, transparency, accountability and discrimination treatment; trace a relevant decision.",
+      "acceptance": "Each required topic covered; observed disregard in scoped process fails implementation criteria where applicable. Legal interpretation remains overlay review.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-1.5",
+      "control_id": "AC-1.5",
+      "criterion_ids": [
+        "AC-1.5/R01",
+        "AC-1.5/R02"
+      ],
+      "actions": "Complete policy/review register; dated material events, change/approval records and updated policies.",
+      "acceptance": "Annual review and completed review/update within 30 days of each relevant material event. A 90-day initiation-only test cannot pass the 30-day requirement.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-1.6",
+      "control_id": "AC-1.6",
+      "criterion_ids": [
+        "AC-1.6/R01",
+        "AC-1.6/R02",
+        "AC-1.6/R03",
+        "AC-1.6/R04"
+      ],
+      "actions": "Jurisdiction/role/use-case inventory, authoritative legal-source register, obligation map and remediation tracker.",
+      "acceptance": "Applicable obligations identified with owner and tracked gaps; unknown applicability is explicitly unresolved. Do not infer legal compliance from an inventory pass.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-1.7",
+      "control_id": "AC-1.7",
+      "criterion_ids": [
+        "AC-1.7/R01",
+        "AC-1.7/R02",
+        "AC-1.7/R03",
+        "AC-1.7/R04",
+        "AC-1.7/R05"
+      ],
+      "actions": "Deployment/change population; predeployment risk assessments and approval timestamps.",
+      "acceptance": "All four risk dimensions assessed before deployment and after material change; an assessment dated after deployment fails predeployment criterion.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-2.1",
+      "control_id": "AC-2.1",
+      "criterion_ids": [
+        "AC-2.1/R01",
+        "AC-2.1/R02",
+        "AC-2.1/R03",
+        "AC-2.1/R04",
+        "AC-2.1/R05"
+      ],
+      "actions": "Inventory plus independent procurement, cloud/API, browser/endpoint and application feature sources; reconcile both directions.",
+      "acceptance": "Scoped AI categories captured with current entries; independently discovered missing asset fails completeness; partial discovery visibility disclosed.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-2.2",
+      "control_id": "AC-2.2",
+      "criterion_ids": [
+        "AC-2.2/R01",
+        "AC-2.2/R02",
+        "AC-2.2/R03",
+        "AC-2.2/R04"
+      ],
+      "actions": "Inventory/classification scheme; compare each selected asset to deployment type, sensitivity, integration depth and criticality.",
+      "acceptance": "All four normative dimensions recorded and supported by actual use. Regulatory labels are separate overlays, not substitutes.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-2.3",
+      "control_id": "AC-2.3",
+      "criterion_ids": [
+        "AC-2.3/R01",
+        "AC-2.3/R02",
+        "AC-2.3/R03",
+        "AC-2.3/R04",
+        "AC-2.3/R05"
+      ],
+      "actions": "Owner register and responsibilities; trace business and technical owners through a personnel change.",
+      "acceptance": "Named accountable owners for each asset and functioning reassignment; one person may hold both roles if explicit. Team name alone fails named-owner criterion.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-2.4",
+      "control_id": "AC-2.4",
+      "criterion_ids": [
+        "AC-2.4/R01",
+        "AC-2.4/R02",
+        "AC-2.4/R03",
+        "AC-2.4/R04",
+        "AC-2.4/R05"
+      ],
+      "actions": "Discovery schedule/results covering quarters; independent shadow-AI sources and disposition records.",
+      "acceptance": "Quarterly discovery and credible scope across unauthorized channels. A missing quarterly occurrence fails cadence; do not mandate exactly two discovery methods unless adopted normatively.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-2.5",
+      "control_id": "AC-2.5",
+      "criterion_ids": [
+        "AC-2.5/R01",
+        "AC-2.5/R02",
+        "AC-2.5/R03",
+        "AC-2.5/R04",
+        "AC-2.5/R05",
+        "AC-2.5/R06"
+      ],
+      "actions": "Lifecycle procedures; onboarding, configuration review, recertification and decommission cases; inspect data retrieval and account termination.",
+      "acceptance": "Every lifecycle phase defined/enforced; revoked former asset account denied. Without real retirement events, exercise supports readiness but not historical operation.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-2.6",
+      "control_id": "AC-2.6",
+      "criterion_ids": [
+        "AC-2.6/R01",
+        "AC-2.6/R02",
+        "AC-2.6/R03",
+        "AC-2.6/R04"
+      ],
+      "actions": "Approved development-tool configurations, code submission restrictions, review records and IP handling.",
+      "acceptance": "All normative governance topics addressed; synthetic restricted-code submission and generated-code change follow restrictions/review; never use actual proprietary code as a test payload.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-3.1",
+      "control_id": "AC-3.1",
+      "criterion_ids": [
+        "AC-3.1/R01",
+        "AC-3.1/R02",
+        "AC-3.1/R03"
+      ],
+      "actions": "Classification-to-service allowlist, effective enforcement config and synthetic labels/payloads.",
+      "acceptance": "Above-approved-class data prevented at supported submission paths; policy-only awareness cannot pass required technical enforcement.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-3.2",
+      "control_id": "AC-3.2",
+      "criterion_ids": [
+        "AC-3.2/R01",
+        "AC-3.2/R02",
+        "AC-3.2/R03",
+        "AC-3.2/R04"
+      ],
+      "actions": "DLP/egress rule exports, alerts and canary tests to sanctioned and unsanctioned endpoints.",
+      "acceptance": "Unauthorized sensitive canaries blocked and detected across scoped channels; successful bypass fails the affected path.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-3.3",
+      "control_id": "AC-3.3",
+      "criterion_ids": [
+        "AC-3.3/R01",
+        "AC-3.3/R02",
+        "AC-3.3/R03"
+      ],
+      "actions": "TLS observations, storage configuration and provider attestations/contracts with service scope.",
+      "acceptance": "TLS 1.2+ in transit and AES-256/equivalent at rest; inherited provider evidence marked as such. Unsupported equivalence or uncovered flow is unknown, not assumed pass.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-3.4",
+      "control_id": "AC-3.4",
+      "criterion_ids": [
+        "AC-3.4/R01",
+        "AC-3.4/R02",
+        "AC-3.4/R03"
+      ],
+      "actions": "Purpose/input templates, redaction/minimization process and technical controls where feasible; inspect unnecessary synthetic fields.",
+      "acceptance": "Inputs limited to stated purpose; feasible-control decision justified; observed unnecessary disclosure fails minimization criterion.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-3.5",
+      "control_id": "AC-3.5",
+      "criterion_ids": [
+        "AC-3.5/R01",
+        "AC-3.5/R02",
+        "AC-3.5/R03"
+      ],
+      "actions": "Retention map including providers, settings, deletion receipts and synthetic deletion/retrieval test.",
+      "acceptance": "Retention enforced and documented deletion works across declared stores; backups/restore caveats explicit; deleted synthetic data still retrievable contrary to policy fails.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-3.6",
+      "control_id": "AC-3.6",
+      "criterion_ids": [
+        "AC-3.6/R01",
+        "AC-3.6/R02",
+        "AC-3.6/R03"
+      ],
+      "actions": "Data-flow locations, subprocessor contracts, applicable safeguards and transfer assessments with qualified review.",
+      "acceptance": "Actual cross-border paths identified; applicable safeguards evidenced. Unknown provider location/transfer duty remains unknown; assessor does not invent a legal finding.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-3.7",
+      "control_id": "AC-3.7",
+      "criterion_ids": [
+        "AC-3.7/R01",
+        "AC-3.7/R02",
+        "AC-3.7/R03",
+        "AC-3.7/R04",
+        "AC-3.7/R05",
+        "AC-3.7/R06"
+      ],
+      "actions": "Corpus classification/ingestion rules, store ACL/network/encryption, citations, inventory and tenant identities.",
+      "acceptance": "Test ingestion above authorized level, unauthorized retrieval, indirect injection and cross-tenant query; each of six normative facets evidenced; unauthorized canary retrieval fails.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-4.1",
+      "control_id": "AC-4.1",
+      "criterion_ids": [
+        "AC-4.1/R01",
+        "AC-4.1/R02",
+        "AC-4.1/R03"
+      ],
+      "actions": "Role/attribute matrix, grants and identity-specific tool tests.",
+      "acceptance": "Permissions match job/need; lower-role and cross-role unauthorized operations denied; inspect every materially distinct enforcement path.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-4.2",
+      "control_id": "AC-4.2",
+      "criterion_ids": [
+        "AC-4.2/R01",
+        "AC-4.2/R02",
+        "AC-4.2/R03"
+      ],
+      "actions": "Identity-provider/service policy and attempted sign-ins to applicable consoles/web interfaces.",
+      "acceptance": "MFA required for human access to covered services; bypass path fails. Noninteractive API keys use credential controls and cannot themselves perform an MFA challenge.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-4.3",
+      "control_id": "AC-4.3",
+      "criterion_ids": [
+        "AC-4.3/R01",
+        "AC-4.3/R02",
+        "AC-4.3/R03",
+        "AC-4.3/R04"
+      ],
+      "actions": "Privileged-role inventory, grants, activation/review logs and denied standard-user operations.",
+      "acceptance": "Model/training/export/configuration administration controlled; ordinary role cannot obtain privileged action via AI integration. Specific PAM technology not mandated.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-4.4",
+      "control_id": "AC-4.4",
+      "criterion_ids": [
+        "AC-4.4/R01",
+        "AC-4.4/R02",
+        "AC-4.4/R03",
+        "AC-4.4/R04"
+      ],
+      "actions": "Secret-store inventory, rotation dates/automation, access logs and compromised-test-secret revocation.",
+      "acceptance": "Central management, automated rotation within 90 days and immediate revocation procedure verified; revoked test key denied. Never expose live secrets in report evidence.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-4.5",
+      "control_id": "AC-4.5",
+      "criterion_ids": [
+        "AC-4.5/R01",
+        "AC-4.5/R02",
+        "AC-4.5/R03"
+      ],
+      "actions": "Full review-cycle register and scoped grant population; trace role change/termination removals.",
+      "acceptance": "All access reviewed at least every 90 days; annual standard-user reviews do not pass. Test a removed identity's access.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-4.6",
+      "control_id": "AC-4.6",
+      "criterion_ids": [
+        "AC-4.6/R01",
+        "AC-4.6/R02",
+        "AC-4.6/R03",
+        "AC-4.6/R04"
+      ],
+      "actions": "For proposed 2.0: integration manifest, scope grants, execution policy and synthetic lower-privilege/cross-tenant/revoked requests.",
+      "acceptance": "Least privilege, revocation, context isolation and outside-model authorization enforced. Existing v1 SHOULD approval-list evidence cannot alone pass the new SHALL.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-5.1",
+      "control_id": "AC-5.1",
+      "criterion_ids": [
+        "AC-5.1/R01",
+        "AC-5.1/R02",
+        "AC-5.1/R03",
+        "AC-5.1/R04",
+        "AC-5.1/R05"
+      ],
+      "actions": "Vendor/deployment population, prior approvals and dated annual risk assessments.",
+      "acceptance": "Predeployment and annual review of data handling, security, certifications and contractual protection for each applicable vendor. Certification alone insufficient.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-5.2",
+      "control_id": "AC-5.2",
+      "criterion_ids": [
+        "AC-5.2/R01",
+        "AC-5.2/R02",
+        "AC-5.2/R03",
+        "AC-5.2/R04",
+        "AC-5.2/R05"
+      ],
+      "actions": "Applicable signed contract/DPA and training-use settings/commitments.",
+      "acceptance": "All required terms present, including no training without consent; unsigned sales assertions insufficient; incompatible terms fail.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-5.3",
+      "control_id": "AC-5.3",
+      "criterion_ids": [
+        "AC-5.3/R01",
+        "AC-5.3/R02",
+        "AC-5.3/R03",
+        "AC-5.3/R04"
+      ],
+      "actions": "Model/source/version/change records and available training-lineage evidence.",
+      "acceptance": "Required provenance verified, limitations explicit. Proprietary-provider training lineage unavailable is unknown for that criterion; do not manufacture complete provenance.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-5.4",
+      "control_id": "AC-5.4",
+      "criterion_ids": [
+        "AC-5.4/R01",
+        "AC-5.4/R02",
+        "AC-5.4/R03",
+        "AC-5.4/R04",
+        "AC-5.4/R05"
+      ],
+      "actions": "Critical-vendor list, monitoring sources, dated incidents/disruptions/terms/enforcement checks and action records.",
+      "acceptance": "Ongoing scoped security monitoring evidenced; known material update ignored without assessment fails monitoring/action criteria as defined.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-5.5",
+      "control_id": "AC-5.5",
+      "criterion_ids": [
+        "AC-5.5/R01",
+        "AC-5.5/R02",
+        "AC-5.5/R03",
+        "AC-5.5/R04",
+        "AC-5.5/R05"
+      ],
+      "actions": "Termination runbook, retrieval/deletion receipts, credential revocation and dependency transition evidence.",
+      "acceptance": "Data return/deletion and access termination work as documented; post-termination test key denied. No event means readiness exercise plus historical limitation.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-5.6",
+      "control_id": "AC-5.6",
+      "criterion_ids": [
+        "AC-5.6/R01",
+        "AC-5.6/R02",
+        "AC-5.6/R03",
+        "AC-5.6/R04"
+      ],
+      "actions": "Broader vendor-monitoring ownership, advisories/subprocessor/policy-update feed and dispositions.",
+      "acceptance": "Advisory monitoring covers stated scope and accountability; SHOULD deviation disclosed. Reuse evidence from 5.4 without double-counting the same finding.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-6.1",
+      "control_id": "AC-6.1",
+      "criterion_ids": [
+        "AC-6.1/R01",
+        "AC-6.1/R02"
+      ],
+      "actions": "Output use-case population, reviewer authority and approvals bound to versions.",
+      "acceptance": "Required human review before covered use; altered output requires renewed review; autonomous use in a covered context fails. New agent action policy does not waive this output control.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-6.2",
+      "control_id": "AC-6.2",
+      "criterion_ids": [
+        "AC-6.2/R01",
+        "AC-6.2/R02"
+      ],
+      "actions": "Domain evaluation corpus, ground-truth/provenance, monitoring thresholds and error remediation.",
+      "acceptance": "Accuracy monitoring operates for intended queries; tests include plausible false assertions and absent sources. A sample with no error does not establish universal accuracy.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-6.3",
+      "control_id": "AC-6.3",
+      "criterion_ids": [
+        "AC-6.3/R01",
+        "AC-6.3/R02",
+        "AC-6.3/R03"
+      ],
+      "actions": "Relevant affected-group/use-case analysis, justified fairness measures, evaluation and mitigation records.",
+      "acceptance": "Bias detection/mitigation procedure operates where applicable; report metric limitations and group coverage; aggregate averages cannot hide an observed relevant group failure.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-6.4",
+      "control_id": "AC-6.4",
+      "criterion_ids": [
+        "AC-6.4/R01",
+        "AC-6.4/R02"
+      ],
+      "actions": "Content/decision inventory, applicable disclosure rules and rendered recipient experience.",
+      "acceptance": "Relevant recipients receive required disclosure in context; hidden metadata alone insufficient where human-readable disclosure required. Legal scope independently reviewed.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-6.5",
+      "control_id": "AC-6.5",
+      "criterion_ids": [
+        "AC-6.5/R01",
+        "AC-6.5/R02",
+        "AC-6.5/R03",
+        "AC-6.5/R04",
+        "AC-6.5/R05"
+      ],
+      "actions": "Proposed 2.0 output-to-sink inventory and validation/authorization paths; inject synthetic SQL, active markup, code and tool parameters where used.",
+      "acceptance": "Appropriate sink validation and outside-model authorization; invalid output safely rejected with minimized logging; one universal filter cannot stand in for all sink contexts.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-6.6",
+      "control_id": "AC-6.6",
+      "criterion_ids": [
+        "AC-6.6/R01",
+        "AC-6.6/R02",
+        "AC-6.6/R03",
+        "AC-6.6/R04",
+        "AC-6.6/R05",
+        "AC-6.6/R06"
+      ],
+      "actions": "Published-media pipeline, supported provenance mechanisms, transforms and incoming-content checks; synthetic marked/unmarked content.",
+      "acceptance": "Every applicable normative marking/preservation/evaluation/disclosure predicate verified. Unsupported text/provenance capability is unknown/failed as evidenced, not waived; metadata absence does not prove human origin.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-7.1",
+      "control_id": "AC-7.1",
+      "criterion_ids": [
+        "AC-7.1/R01",
+        "AC-7.1/R02",
+        "AC-7.1/R03",
+        "AC-7.1/R04",
+        "AC-7.1/R05",
+        "AC-7.1/R06"
+      ],
+      "actions": "Scoped AI playbooks and exercise records for exposure, harmful output, model compromise, vendor incident and discrimination.",
+      "acceptance": "All required scenarios have executable roles/containment/recovery; exercise validates relevant paths without claiming actual incident history.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-7.2",
+      "control_id": "AC-7.2",
+      "criterion_ids": [
+        "AC-7.2/R01",
+        "AC-7.2/R02",
+        "AC-7.2/R03",
+        "AC-7.2/R04",
+        "AC-7.2/R05"
+      ],
+      "actions": "Severity/escalation matrix, contact ownership and tabletop with simulated recipients.",
+      "acceptance": "Escalation criteria and responsible paths work; no real external notifications sent during testing. Regulator/data-subject decisions require applicable-law review.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-7.3",
+      "control_id": "AC-7.3",
+      "criterion_ids": [
+        "AC-7.3/R01",
+        "AC-7.3/R02",
+        "AC-7.3/R03",
+        "AC-7.3/R04"
+      ],
+      "actions": "Client incident-classification rubric and sample scenarios/incidents.",
+      "acceptance": "Rubric accounts for sensitivity, blast radius, regulatory impact, discrimination and rights; assessment-finding severity and incident severity kept distinct.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-7.4",
+      "control_id": "AC-7.4",
+      "criterion_ids": [
+        "AC-7.4/R01",
+        "AC-7.4/R02",
+        "AC-7.4/R03",
+        "AC-7.4/R04"
+      ],
+      "actions": "High/critical incident population and dated review records/actions.",
+      "acceptance": "Required reviews document causes, factors, actions and prevention. Candidate 2.0 planning deadline below is not silently applied to historical v1 results.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-7.5",
+      "control_id": "AC-7.5",
+      "criterion_ids": [
+        "AC-7.5/R01",
+        "AC-7.5/R02",
+        "AC-7.5/R03"
+      ],
+      "actions": "Notification applicability/deadline/content register, owners and simulated workflow.",
+      "acceptance": "Applicable duties mapped to operative sources and timeline; synthetic exercise reaches accountable owner. This is procedural verification, not a conclusion that an incident legally requires notice.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-8.1",
+      "control_id": "AC-8.1",
+      "criterion_ids": [
+        "AC-8.1/R01",
+        "AC-8.1/R02",
+        "AC-8.1/R03",
+        "AC-8.1/R04",
+        "AC-8.1/R05"
+      ],
+      "actions": "Scoped usage events generated by known test identities and correlated authoritative logs.",
+      "acceptance": "Identity, timestamp, service and interaction type captured sufficiently for stated monitoring/investigation; model-created logs alone insufficient.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-8.2",
+      "control_id": "AC-8.2",
+      "criterion_ids": [
+        "AC-8.2/R01",
+        "AC-8.2/R02",
+        "AC-8.2/R03",
+        "AC-8.2/R04",
+        "AC-8.2/R05"
+      ],
+      "actions": "Detection config and canaries for unusual volume/location/time/consumption.",
+      "acceptance": "Relevant patterns trigger expected detections and routing; benign baseline also checked; log existence without detection fails capability criterion.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-8.3",
+      "control_id": "AC-8.3",
+      "criterion_ids": [
+        "AC-8.3/R01",
+        "AC-8.3/R02"
+      ],
+      "actions": "Applicable prompt/response capture design, restricted access, redaction and retrieval/deletion demonstration.",
+      "acceptance": "Where adopted, evidence supports investigation under applicable privacy/retention constraints; SHOULD deviation explicit; unnecessary raw-secret capture is a separate privacy finding.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-8.4",
+      "control_id": "AC-8.4",
+      "criterion_ids": [
+        "AC-8.4/R01",
+        "AC-8.4/R02",
+        "AC-8.4/R03"
+      ],
+      "actions": "Mission-critical service list, performance/availability/quality objectives, alerts and degradation exercise.",
+      "acceptance": "Monitoring covers all three dimensions; outage or quality degradation detected within declared objectives; noncritical scope N/A justified.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-8.5",
+      "control_id": "AC-8.5",
+      "criterion_ids": [
+        "AC-8.5/R01",
+        "AC-8.5/R02",
+        "AC-8.5/R03",
+        "AC-8.5/R04"
+      ],
+      "actions": "Log-class retention/integrity policy, lifecycle settings, timestamped history and tamper/access test.",
+      "acceptance": "Evaluate old 12-month rule only for v1; proposed 2.0 replacement below uses scoped justified retention. Unauthorized modification/deletion denied or detected as specified; do not call retention exceptions v1 conformance.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-9.1",
+      "control_id": "AC-9.1",
+      "criterion_ids": [
+        "AC-9.1/R01",
+        "AC-9.1/R02",
+        "AC-9.1/R03"
+      ],
+      "actions": "Complete employee/hire population, training content and completion records.",
+      "acceptance": "AI risks/policies/responsibilities covered within 30 days of hire and annually; noncompletion fails affected criterion; provider completion screenshot without population insufficient.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-9.2",
+      "control_id": "AC-9.2",
+      "criterion_ids": [
+        "AC-9.2/R01",
+        "AC-9.2/R02",
+        "AC-9.2/R03",
+        "AC-9.2/R04",
+        "AC-9.2/R05"
+      ],
+      "actions": "High-risk role register, role-specific content and completions.",
+      "acceptance": "Applicable admins/developers/data scientists/regulated users receive relevant additional training; generic course alone insufficient for specialized tasks.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-9.3",
+      "control_id": "AC-9.3",
+      "criterion_ids": [
+        "AC-9.3/R01",
+        "AC-9.3/R02",
+        "AC-9.3/R03"
+      ],
+      "actions": "Employee acknowledgments, approved update dates and communication/reacknowledgment records.",
+      "acceptance": "All employees covered; updates communicated within 30 days and reacknowledged; draft announcement without delivery/acknowledgment insufficient.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-9.4",
+      "control_id": "AC-9.4",
+      "criterion_ids": [
+        "AC-9.4/R01",
+        "AC-9.4/R02",
+        "AC-9.4/R03",
+        "AC-9.4/R04"
+      ],
+      "actions": "Threat-awareness material and targeted comprehension/exercise evidence.",
+      "acceptance": "Required deepfake/social engineering and adversarial manipulation topics included; example exercise supplements content without adding an unstated mandatory pass-rate threshold.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-9.5",
+      "control_id": "AC-9.5",
+      "criterion_ids": [
+        "AC-9.5/R01",
+        "AC-9.5/R02",
+        "AC-9.5/R03",
+        "AC-9.5/R04",
+        "AC-9.5/R05"
+      ],
+      "actions": "Governing-body roster, annual literacy completions and content.",
+      "acceptance": "Capabilities/limits, organizational exposure, regulatory duties and oversight covered annually; sole-owner equivalent supported without fictitious board.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-10.1",
+      "control_id": "AC-10.1",
+      "criterion_ids": [
+        "AC-10.1/R01",
+        "AC-10.1/R02",
+        "AC-10.1/R03"
+      ],
+      "actions": "Endpoint inventory, auth/scope/rate policies and synthetic unauthenticated, unauthorized and excess-volume requests.",
+      "acceptance": "Authentication, authorization and rate limiting effective; unauthorized extraction path fails relevant criterion.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-10.2",
+      "control_id": "AC-10.2",
+      "criterion_ids": [
+        "AC-10.2/R01",
+        "AC-10.2/R02",
+        "AC-10.2/R03",
+        "AC-10.2/R04",
+        "AC-10.2/R05"
+      ],
+      "actions": "Production/high-risk inventory, model change history, annual/post-significant-update adversarial reports and tracked results.",
+      "acceptance": "Required cadence and injection/extraction/jailbreak coverage evidenced; tests describe corpus, limitations and response to findings. Test completion does not mean all vulnerabilities absent.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-10.3",
+      "control_id": "AC-10.3",
+      "criterion_ids": [
+        "AC-10.3/R01",
+        "AC-10.3/R02",
+        "AC-10.3/R03"
+      ],
+      "actions": "Applicable model/version/dependency artifacts, RTO and isolated rollback exercise.",
+      "acceptance": "Exact approved earlier version restored within declared RTO with compatible dependencies; managed API-only model control may be N/A, but service continuity still assessed elsewhere.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-10.4",
+      "control_id": "AC-10.4",
+      "criterion_ids": [
+        "AC-10.4/R01",
+        "AC-10.4/R02"
+      ],
+      "actions": "Trusted release manifest/signature/hash chain and altered synthetic artifact/loading test.",
+      "acceptance": "Deployed self-hosted artifact identity verified against trusted approval; altered/substituted artifact rejected; a hash provided by the same untrusted source is insufficient.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-10.5",
+      "control_id": "AC-10.5",
+      "criterion_ids": [
+        "AC-10.5/R01",
+        "AC-10.5/R02",
+        "AC-10.5/R03",
+        "AC-10.5/R04",
+        "AC-10.5/R05"
+      ],
+      "actions": "External-input channel map, execution boundaries and representative direct/indirect injection corpus.",
+      "acceptance": "Defense procedures and enforcement implemented; prompt secrecy or keyword filter alone cannot prove prevention. Any observed authority/data-boundary bypass fails the relevant criterion.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": []
+    },
+    {
+      "id": "VP-AC-10.6",
+      "control_id": "AC-10.6",
+      "criterion_ids": [
+        "AC-10.6/INV",
+        "AC-10.6/R01",
+        "AC-10.6/R02",
+        "AC-10.6/R03",
+        "AC-10.6/R04",
+        "AC-10.6/R05",
+        "AC-10.6/R06",
+        "AC-10.6/R07",
+        "AC-10.6/R08",
+        "AC-10.6/R09",
+        "AC-10.6/R10",
+        "AC-10.6/R11"
+      ],
+      "actions": "Complete agent/tool inventory, action classes, permission/budget/approval enforcement, logs/change records and computer-use isolation.",
+      "acceptance": "Each applicable existing/proposed predicate tested independently under C3; v2 must preserve or explicitly record changed v1 guardrails rather than silently dropping them.",
+      "shared_contract": "RFC0002/C1",
+      "execution_fields": [
+        "scope",
+        "version",
+        "population",
+        "sample",
+        "period",
+        "provenance",
+        "observations",
+        "limitations",
+        "assessor"
+      ],
+      "facets": [
+        {
+          "id": "AC-10.6/R01",
+          "text": "The system SHALL bind each tool action to authenticated actor, tenant, delegated scope and permitted purpose, and reject revoked or expired authority.",
+          "procedure": "Trace human/service principal → agent → tool → downstream identity; test wrong tenant, narrower user, expired/revoked grant and confused deputy. Pass: No expansion of permitted authority; downstream denies unauthorized actions; actual actor and delegator traceable."
+        },
+        {
+          "id": "AC-10.6/R02",
+          "text": "Consequential actions SHALL require policy-defined approval bound to exact action, parameters, actor and expiry; changed parameters SHALL invalidate approval.",
+          "procedure": "Execute P03–P05/P12 plus operation/recipient/resource/version mutation; inspect exact preview and atomic consume. Pass: Changed, expired, revoked or replayed approval cannot dispatch; approver has current authority; approval independent of model-generated claims."
+        },
+        {
+          "id": "AC-10.6/R03",
+          "text": "Untrusted instructions from retrieved content, tools, messages or memory SHALL not expand the agent's authority or bypass execution policy.",
+          "procedure": "Insert adversarial instructions into each supported retrieval, message, web, attachment, multimodal and tool-result channel using canaries. Pass: Observed attack cannot expand authority/bypass execution policy; corpus/channel coverage recorded; content refusal alone insufficient."
+        },
+        {
+          "id": "AC-10.6/R04",
+          "text": "Persistent memory SHALL have scoped read/write permissions, provenance, expiry and controlled deletion, and SHALL not confer authorization.",
+          "procedure": "Attempt unauthorized memory write/read, cross-user retrieval, provenance forgery, expired item and deletion/restore. Pass: Scope/expiry/deletion enforced; memory cannot grant authority; historical/backup limitations disclosed."
+        },
+        {
+          "id": "AC-10.6/R05",
+          "text": "Agent-to-agent messages SHALL carry verifiable origin and delegated scope; recipients SHALL validate them and reject unauthorized task escalation.",
+          "procedure": "Forge source identity, change delegated task scope, replay message and ask recipient to elevate privileges. Pass: Verified origin and permitted delegation; unauthorized escalation rejected and traceable. N/A requires no inter-agent capability."
+        },
+        {
+          "id": "AC-10.6/R06",
+          "text": "Tool and protocol connections, including MCP where used, SHALL validate trusted endpoints, identities, permissions and approved capability changes.",
+          "procedure": "Substitute endpoint/tool schema/description and reconnect after trust revocation; inspect capability-review approval. Pass: Only trusted authenticated permitted capabilities execute; changes invalidate affected approvals; prompt description cannot self-authorize capability."
+        },
+        {
+          "id": "AC-10.6/R07",
+          "text": "Execution SHALL enforce bounds on cost, time, recursion and privileged activity and SHALL support tested suspension and termination.",
+          "procedure": "Test per-task/cumulative cost, recursion, call-count and scope limits; invoke suspension before and during dispatch. Pass: Enforced configured bounds; no new dispatch after acknowledged suspension; cancellation guarantees distinguish accepted external calls."
+        },
+        {
+          "id": "AC-10.6/R08",
+          "text": "Recovery SHALL use idempotency where supported, detect and reconcile uncertain or duplicate consequential actions, and verify state integrity before autonomous execution resumes. Blind retries of actions with uncertain external state SHALL be suspended pending reconciliation.",
+          "procedure": "Inject timeout/partial completion, replay operation key, provider without idempotency and inconsistent recovery state. Pass: No blind uncertain-state retry; duplicate/uncertain actions reconciled; safe state established before resumption; residual external limits documented."
+        },
+        {
+          "id": "AC-10.6/R09",
+          "text": "Agent prompts, tool definitions and configuration SHALL be version-controlled, reviewed under the production change process and integrity-protected against unapproved modification.",
+          "procedure": "Compare approved deployment manifest with runtime; tamper/unapproved-change test is rejected or detected before affected execution is permitted."
+        },
+        {
+          "id": "AC-10.6/R10",
+          "text": "Invocation-decision records SHALL link actor, agent, operation, policy, approval where required and execution outcome, and SHALL minimize sensitive content and be protected against unauthorized modification/access under the log-retention policy.",
+          "procedure": "Correlate synthetic allowed/denied invocations; secret canary is omitted/redacted; unauthorized modification/access blocked or detected as specified."
+        },
+        {
+          "id": "AC-10.6/R11",
+          "text": "Computer-, browser- and shell-use execution SHALL be isolated from unauthorized tenant/session resources, enforce scoped network egress and persistence, and require applicable Appendix B approval before consequential external state changes.",
+          "procedure": "Attempt sandbox boundary crossing, cross-session access, unapproved egress and persistent change; denied outside approved scope, with required approval enforced at the external boundary."
+        }
+      ]
+    }
+  ]
+}

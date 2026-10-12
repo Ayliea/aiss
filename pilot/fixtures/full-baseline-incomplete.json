@@ -1,0 +1,162 @@
+{
+  "assessment_id": "synthetic-full-baseline-incomplete",
+  "manifest_sha256": "82195527601a91559510c8a38856988047597e7381e54029fb7587824ee4e960",
+  "as_of": "2026-10-06",
+  "profile": {
+    "id": "full-synthetic-draft",
+    "control_ids": [
+      "AC-1.1",
+      "AC-1.2",
+      "AC-1.3",
+      "AC-1.4",
+      "AC-1.5",
+      "AC-1.6",
+      "AC-1.7",
+      "AC-2.1",
+      "AC-2.2",
+      "AC-2.3",
+      "AC-2.4",
+      "AC-2.5",
+      "AC-2.6",
+      "AC-3.1",
+      "AC-3.2",
+      "AC-3.3",
+      "AC-3.4",
+      "AC-3.5",
+      "AC-3.6",
+      "AC-3.7",
+      "AC-4.1",
+      "AC-4.2",
+      "AC-4.3",
+      "AC-4.4",
+      "AC-4.5",
+      "AC-4.6",
+      "AC-5.1",
+      "AC-5.2",
+      "AC-5.3",
+      "AC-5.4",
+      "AC-5.5",
+      "AC-5.6",
+      "AC-6.1",
+      "AC-6.2",
+      "AC-6.3",
+      "AC-6.4",
+      "AC-6.5",
+      "AC-6.6",
+      "AC-7.1",
+      "AC-7.2",
+      "AC-7.3",
+      "AC-7.4",
+      "AC-7.5",
+      "AC-8.1",
+      "AC-8.2",
+      "AC-8.3",
+      "AC-8.4",
+      "AC-8.5",
+      "AC-9.1",
+      "AC-9.2",
+      "AC-9.3",
+      "AC-9.4",
+      "AC-9.5",
+      "AC-10.1",
+      "AC-10.2",
+      "AC-10.3",
+      "AC-10.4",
+      "AC-10.5",
+      "AC-10.6"
+    ],
+    "scope_kind": "full-draft-baseline"
+  },
+  "evidence": [
+    {
+      "id": "ev1",
+      "origin": "direct",
+      "source": "synthetic-execution-boundary",
+      "provenance": "canary test receipt, fictional",
+      "collected_at": "2026-10-06",
+      "valid_until": "2026-10-07",
+      "confidence": "high",
+      "coverage": [
+        "AC-4.1/R01",
+        "AC-4.1/R02",
+        "AC-4.1/R03"
+      ],
+      "sufficient": true,
+      "available": true
+    }
+  ],
+  "observations": [
+    {
+      "criterion_id": "AC-4.1/R01",
+      "applicability": "applicable",
+      "state": "pass",
+      "evidence_ids": [
+        "ev1"
+      ],
+      "execution": {
+        "procedure_id": "VP-AC-4.1",
+        "scope": "Synthetic fixture resource only",
+        "system_version": "fixture-v1",
+        "population_size": 1,
+        "sample_ids": [
+          "fixture-resource"
+        ],
+        "selection_method": "Full synthetic population",
+        "period_start": "2026-10-06",
+        "period_end": "2026-10-06",
+        "performed_at": "2026-10-06",
+        "assessor": "fixture-assessor",
+        "observations": "Declared synthetic observation; not a real system execution",
+        "limitations": "Synthetic data; no production coverage"
+      }
+    },
+    {
+      "criterion_id": "AC-4.1/R02",
+      "applicability": "applicable",
+      "state": "pass",
+      "evidence_ids": [
+        "ev1"
+      ],
+      "execution": {
+        "procedure_id": "VP-AC-4.1",
+        "scope": "Synthetic fixture resource only",
+        "system_version": "fixture-v1",
+        "population_size": 1,
+        "sample_ids": [
+          "fixture-resource"
+        ],
+        "selection_method": "Full synthetic population",
+        "period_start": "2026-10-06",
+        "period_end": "2026-10-06",
+        "performed_at": "2026-10-06",
+        "assessor": "fixture-assessor",
+        "observations": "Declared synthetic observation; not a real system execution",
+        "limitations": "Synthetic data; no production coverage"
+      }
+    },
+    {
+      "criterion_id": "AC-4.1/R03",
+      "applicability": "applicable",
+      "state": "pass",
+      "evidence_ids": [
+        "ev1"
+      ],
+      "execution": {
+        "procedure_id": "VP-AC-4.1",
+        "scope": "Synthetic fixture resource only",
+        "system_version": "fixture-v1",
+        "population_size": 1,
+        "sample_ids": [
+          "fixture-resource"
+        ],
+        "selection_method": "Full synthetic population",
+        "period_start": "2026-10-06",
+        "period_end": "2026-10-06",
+        "performed_at": "2026-10-06",
+        "assessor": "fixture-assessor",
+        "observations": "Declared synthetic observation; not a real system execution",
+        "limitations": "Synthetic data; no production coverage"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1687 @@
+{
+  "schema_version": "1",
+  "methodology_version": "2.0.0-pilot.1",
+  "status": "draft",
+  "controls": [
+    {
+      "id": "AC-1.1",
+      "domain_id": "AC-1",
+      "title": "AI Acceptable Use Policy",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL maintain a formal, board- or executive-approved AI Acceptable Use Policy (AUP) that defines permitted and prohibited uses of AI tools, specifies data handling requirements for AI interactions, and establishes consequences for policy violations.",
+      "source_requirement": "The organization SHALL maintain a formal, board- or executive-approved AI Acceptable Use Policy (AUP) that defines permitted and prohibited uses of AI tools, specifies data handling requirements for AI interactions, and establishes consequences for policy violations.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-1.1/R01",
+          "text": "Formal AUP has executive/board approval"
+        },
+        {
+          "id": "AC-1.1/R02",
+          "text": "Permitted and prohibited uses defined"
+        },
+        {
+          "id": "AC-1.1/R03",
+          "text": "AI data-handling requirements defined"
+        },
+        {
+          "id": "AC-1.1/R04",
+          "text": "Violation consequences defined"
+        }
+      ]
+    },
+    {
+      "id": "AC-1.2",
+      "domain_id": "AC-1",
+      "title": "AI Governance Oversight Structure",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL designate a governance body or individual with explicit authority and accountability for AI security oversight, including approval of new AI system deployments, review of AI-related risk assessments, and escalation of AI security incidents.",
+      "source_requirement": "The organization SHALL designate a governance body or individual with explicit authority and accountability for AI security oversight, including approval of new AI system deployments, review of AI-related risk assessments, and escalation of AI security incidents.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-1.2/R01",
+          "text": "Named oversight body/individual has explicit authority and accountability"
+        },
+        {
+          "id": "AC-1.2/R02",
+          "text": "Deployment approval authority assigned"
+        },
+        {
+          "id": "AC-1.2/R03",
+          "text": "Risk-assessment review authority assigned"
+        },
+        {
+          "id": "AC-1.2/R04",
+          "text": "Incident escalation authority assigned"
+        }
+      ]
+    },
+    {
+      "id": "AC-1.3",
+      "domain_id": "AC-1",
+      "title": "AI Risk Appetite Statement",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL document its risk appetite for AI adoption, specifying acceptable risk thresholds for data exposure, AI-driven decision-making, and regulatory compliance, aligned to the broader enterprise risk management framework.",
+      "source_requirement": "The organization SHALL document its risk appetite for AI adoption, specifying acceptable risk thresholds for data exposure, AI-driven decision-making, and regulatory compliance, aligned to the broader enterprise risk management framework.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-1.3/R01",
+          "text": "AI risk appetite documented"
+        },
+        {
+          "id": "AC-1.3/R02",
+          "text": "Data-exposure thresholds defined"
+        },
+        {
+          "id": "AC-1.3/R03",
+          "text": "AI decision-making thresholds defined"
+        },
+        {
+          "id": "AC-1.3/R04",
+          "text": "Regulatory-compliance thresholds defined"
+        },
+        {
+          "id": "AC-1.3/R05",
+          "text": "Alignment with enterprise risk framework evidenced"
+        }
+      ]
+    },
+    {
+      "id": "AC-1.4",
+      "domain_id": "AC-1",
+      "title": "AI Ethics and Responsible Use Guidelines",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL establish guidelines for the ethical and responsible use of AI, addressing fairness, transparency, accountability, and the potential for algorithmic discrimination in AI-driven processes.",
+      "source_requirement": "The organization SHALL establish guidelines for the ethical and responsible use of AI, addressing fairness, transparency, accountability, and the potential for algorithmic discrimination in AI-driven processes.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-1.4/R01",
+          "text": "Responsible-use guidelines established"
+        },
+        {
+          "id": "AC-1.4/R02",
+          "text": "Fairness addressed"
+        },
+        {
+          "id": "AC-1.4/R03",
+          "text": "Transparency addressed"
+        },
+        {
+          "id": "AC-1.4/R04",
+          "text": "Accountability addressed"
+        },
+        {
+          "id": "AC-1.4/R05",
+          "text": "Algorithmic discrimination addressed"
+        }
+      ]
+    },
+    {
+      "id": "AC-1.5",
+      "domain_id": "AC-1",
+      "title": "AI Policy Review and Maintenance Cadence",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL review and update all AI-related policies at least annually, or within 30 days of a material change in AI regulatory requirements, significant AI security incident, or substantial change to the organization's AI technology landscape.",
+      "source_requirement": "The organization SHALL review and update all AI-related policies at least annually, or within 30 days of a material change in AI regulatory requirements, significant AI security incident, or substantial change to the organization's AI technology landscape.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-1.5/R01",
+          "text": "Every AI policy reviewed and updated at least annually"
+        },
+        {
+          "id": "AC-1.5/R02",
+          "text": "Review/update completed within 30 days of each material regulatory, incident or technology change"
+        }
+      ]
+    },
+    {
+      "id": "AC-1.6",
+      "domain_id": "AC-1",
+      "title": "Regulatory Compliance Program",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL maintain an inventory of applicable AI regulations and map organizational AI activities to specific regulatory requirements, identifying compliance gaps and tracking remediation progress.",
+      "source_requirement": "The organization SHALL maintain an inventory of applicable AI regulations and map organizational AI activities to specific regulatory requirements, identifying compliance gaps and tracking remediation progress.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-1.6/R01",
+          "text": "Applicable AI regulation inventory maintained"
+        },
+        {
+          "id": "AC-1.6/R02",
+          "text": "AI activities mapped to applicable requirements"
+        },
+        {
+          "id": "AC-1.6/R03",
+          "text": "Compliance gaps identified"
+        },
+        {
+          "id": "AC-1.6/R04",
+          "text": "Remediation progress tracked"
+        }
+      ]
+    },
+    {
+      "id": "AC-1.7",
+      "domain_id": "AC-1",
+      "title": "AI Risk Assessment",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL conduct a documented AI risk assessment for each AI tool or use case prior to deployment and on material change, evaluating data exposure, output reliability (including bias and hallucination), vendor trust, and regulatory impact.",
+      "source_requirement": "The organization SHALL conduct a documented AI risk assessment for each AI tool or use case prior to deployment and on material change, evaluating data exposure, output reliability (including bias and hallucination), vendor trust, and regulatory impact.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-1.7/R01",
+          "text": "Assessment completed before each deployment and on material change"
+        },
+        {
+          "id": "AC-1.7/R02",
+          "text": "Data exposure evaluated"
+        },
+        {
+          "id": "AC-1.7/R03",
+          "text": "Output reliability including bias/hallucination evaluated"
+        },
+        {
+          "id": "AC-1.7/R04",
+          "text": "Vendor trust evaluated"
+        },
+        {
+          "id": "AC-1.7/R05",
+          "text": "Regulatory impact evaluated"
+        }
+      ]
+    },
+    {
+      "id": "AC-2.1",
+      "domain_id": "AC-2",
+      "title": "AI Asset Inventory",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL maintain a current, comprehensive inventory of all AI systems, services, platforms, and integrations in use, including SaaS AI features embedded in existing business applications, standalone AI tools, API-based integrations, and internally developed models.",
+      "source_requirement": "The organization SHALL maintain a current, comprehensive inventory of all AI systems, services, platforms, and integrations in use, including SaaS AI features embedded in existing business applications, standalone AI tools, API-based integrations, and internally developed models.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-2.1/R01",
+          "text": "Current comprehensive AI inventory maintained"
+        },
+        {
+          "id": "AC-2.1/R02",
+          "text": "Embedded SaaS features included"
+        },
+        {
+          "id": "AC-2.1/R03",
+          "text": "Standalone AI tools included"
+        },
+        {
+          "id": "AC-2.1/R04",
+          "text": "API integrations included"
+        },
+        {
+          "id": "AC-2.1/R05",
+          "text": "Internally developed models included"
+        }
+      ]
+    },
+    {
+      "id": "AC-2.2",
+      "domain_id": "AC-2",
+      "title": "AI Asset Classification",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL classify each AI asset across four dimensions: deployment type (SaaS, API, self-hosted, embedded), data sensitivity (public, internal, confidential, restricted), integration depth (standalone, integrated, automated), and business criticality (experimental, operational, mission-critical).",
+      "source_requirement": "The organization SHALL classify each AI asset across four dimensions: deployment type (SaaS, API, self-hosted, embedded), data sensitivity (public, internal, confidential, restricted), integration depth (standalone, integrated, automated), and business criticality (experimental, operational, mission-critical).",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-2.2/R01",
+          "text": "Every asset classified by deployment type"
+        },
+        {
+          "id": "AC-2.2/R02",
+          "text": "Every asset classified by data sensitivity"
+        },
+        {
+          "id": "AC-2.2/R03",
+          "text": "Every asset classified by integration depth"
+        },
+        {
+          "id": "AC-2.2/R04",
+          "text": "Every asset classified by business criticality"
+        }
+      ]
+    },
+    {
+      "id": "AC-2.3",
+      "domain_id": "AC-2",
+      "title": "AI Asset Ownership Assignment",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL assign a named business owner and a named technical owner to each AI asset, with documented accountability for security compliance, risk acceptance, and lifecycle decisions.",
+      "source_requirement": "The organization SHALL assign a named business owner and a named technical owner to each AI asset, with documented accountability for security compliance, risk acceptance, and lifecycle decisions.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-2.3/R01",
+          "text": "Named business owner assigned per asset"
+        },
+        {
+          "id": "AC-2.3/R02",
+          "text": "Named technical owner assigned per asset"
+        },
+        {
+          "id": "AC-2.3/R03",
+          "text": "Security compliance accountability documented"
+        },
+        {
+          "id": "AC-2.3/R04",
+          "text": "Risk acceptance accountability documented"
+        },
+        {
+          "id": "AC-2.3/R05",
+          "text": "Lifecycle accountability documented"
+        }
+      ]
+    },
+    {
+      "id": "AC-2.4",
+      "domain_id": "AC-2",
+      "title": "Shadow AI Discovery",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL conduct discovery activities at least quarterly to identify AI tools in use that were not procured through approved channels, including personal accounts used for business purposes, unauthorized browser extensions, and AI features enabled by default in existing software.",
+      "source_requirement": "The organization SHALL conduct discovery activities at least quarterly to identify AI tools in use that were not procured through approved channels, including personal accounts used for business purposes, unauthorized browser extensions, and AI features enabled by default in existing software.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-2.4/R01",
+          "text": "Discovery occurs at least quarterly"
+        },
+        {
+          "id": "AC-2.4/R02",
+          "text": "Unapproved procurement/account channels covered"
+        },
+        {
+          "id": "AC-2.4/R03",
+          "text": "Personal business-use accounts covered"
+        },
+        {
+          "id": "AC-2.4/R04",
+          "text": "Unauthorized extensions covered"
+        },
+        {
+          "id": "AC-2.4/R05",
+          "text": "Default-enabled AI features covered"
+        }
+      ]
+    },
+    {
+      "id": "AC-2.5",
+      "domain_id": "AC-2",
+      "title": "AI Asset Lifecycle Management",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL establish and enforce procedures for the complete lifecycle of AI assets: approval and onboarding, configuration review, periodic recertification, and secure decommissioning including data retrieval and account termination.",
+      "source_requirement": "The organization SHALL establish and enforce procedures for the complete lifecycle of AI assets: approval and onboarding, configuration review, periodic recertification, and secure decommissioning including data retrieval and account termination.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-2.5/R01",
+          "text": "Lifecycle procedures established and enforced"
+        },
+        {
+          "id": "AC-2.5/R02",
+          "text": "Approval/onboarding covered"
+        },
+        {
+          "id": "AC-2.5/R03",
+          "text": "Configuration review covered"
+        },
+        {
+          "id": "AC-2.5/R04",
+          "text": "Periodic recertification covered"
+        },
+        {
+          "id": "AC-2.5/R05",
+          "text": "Decommission data retrieval covered"
+        },
+        {
+          "id": "AC-2.5/R06",
+          "text": "Decommission account termination covered"
+        }
+      ]
+    },
+    {
+      "id": "AC-2.6",
+      "domain_id": "AC-2",
+      "title": "AI Development Tool Governance",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL establish governance requirements for AI-powered development tools (code assistants, code generation platforms, and AI-integrated development environments) that address code review obligations, intellectual property protections, and restrictions on submitting proprietary source code to external AI services.",
+      "source_requirement": "The organization SHALL establish governance requirements for AI-powered development tools (code assistants, code generation platforms, and AI-integrated development environments) that address code review obligations, intellectual property protections, and restrictions on submitting proprietary source code to external AI services.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-2.6/R01",
+          "text": "Development-tool governance established"
+        },
+        {
+          "id": "AC-2.6/R02",
+          "text": "Generated-code review obligations defined"
+        },
+        {
+          "id": "AC-2.6/R03",
+          "text": "IP protections defined"
+        },
+        {
+          "id": "AC-2.6/R04",
+          "text": "External proprietary-source submission restrictions defined"
+        }
+      ]
+    },
+    {
+      "id": "AC-3.1",
+      "domain_id": "AC-3",
+      "title": "Data Classification for AI Inputs",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL enforce data classification requirements for all data submitted to AI systems, ensuring that employees understand which data classifications are permitted for each approved AI service and that technical controls prevent submission of data exceeding the approved classification level.",
+      "source_requirement": "The organization SHALL enforce data classification requirements for all data submitted to AI systems, ensuring that employees understand which data classifications are permitted for each approved AI service and that technical controls prevent submission of data exceeding the approved classification level.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-3.1/R01",
+          "text": "AI input classification enforced"
+        },
+        {
+          "id": "AC-3.1/R02",
+          "text": "Permitted service/classification understood"
+        },
+        {
+          "id": "AC-3.1/R03",
+          "text": "Technical controls prevent above-approved-class submission"
+        }
+      ]
+    },
+    {
+      "id": "AC-3.2",
+      "domain_id": "AC-3",
+      "title": "Data Loss Prevention for AI Endpoints",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL implement data loss prevention controls that monitor, detect, and prevent unauthorized transmission of sensitive data to AI services, including both sanctioned tools exceeding their approved data classification and unsanctioned AI endpoints.",
+      "source_requirement": "The organization SHALL implement data loss prevention controls that monitor, detect, and prevent unauthorized transmission of sensitive data to AI services, including both sanctioned tools exceeding their approved data classification and unsanctioned AI endpoints.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-3.2/R01",
+          "text": "DLP monitors unauthorized sensitive transmission"
+        },
+        {
+          "id": "AC-3.2/R02",
+          "text": "DLP detects unauthorized sensitive transmission"
+        },
+        {
+          "id": "AC-3.2/R03",
+          "text": "DLP prevents unauthorized sensitive transmission"
+        },
+        {
+          "id": "AC-3.2/R04",
+          "text": "Sanctioned over-classification and unsanctioned endpoints covered"
+        }
+      ]
+    },
+    {
+      "id": "AC-3.3",
+      "domain_id": "AC-3",
+      "title": "Encryption for AI Data Flows",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL ensure that all data transmitted to and from AI services is encrypted in transit using TLS 1.2 or higher, and that data at rest within AI service environments is encrypted using AES-256 or equivalent, as verified through vendor documentation or contractual commitments.",
+      "source_requirement": "The organization SHALL ensure that all data transmitted to and from AI services is encrypted in transit using TLS 1.2 or higher, and that data at rest within AI service environments is encrypted using AES-256 or equivalent, as verified through vendor documentation or contractual commitments.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-3.3/R01",
+          "text": "All AI flows use TLS 1.2 or higher"
+        },
+        {
+          "id": "AC-3.3/R02",
+          "text": "Provider AI data at rest uses AES-256 or verified equivalent"
+        },
+        {
+          "id": "AC-3.3/R03",
+          "text": "Provider encryption supported by scoped documentation or contract"
+        }
+      ]
+    },
+    {
+      "id": "AC-3.4",
+      "domain_id": "AC-3",
+      "title": "Data Minimization for AI Interactions",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL implement procedures and, where feasible, technical controls to ensure that data submitted to AI systems is limited to what is necessary for the intended purpose, preventing over-sharing of organizational information in AI prompts and inputs.",
+      "source_requirement": "The organization SHALL implement procedures and, where feasible, technical controls to ensure that data submitted to AI systems is limited to what is necessary for the intended purpose, preventing over-sharing of organizational information in AI prompts and inputs.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-3.4/R01",
+          "text": "Purpose-limited input minimization procedures operate"
+        },
+        {
+          "id": "AC-3.4/R02",
+          "text": "Technical minimization controls implemented where feasible, with feasibility decision recorded"
+        },
+        {
+          "id": "AC-3.4/R03",
+          "text": "Over-sharing of organizational information prevented by scoped procedures/controls"
+        }
+      ]
+    },
+    {
+      "id": "AC-3.5",
+      "domain_id": "AC-3",
+      "title": "AI Data Retention and Deletion",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL document and enforce data retention requirements for AI interactions, including vendor retention policies, and SHALL verify that deletion mechanisms function as documented.",
+      "source_requirement": "The organization SHALL document and enforce data retention requirements for AI interactions, including vendor retention policies, and SHALL verify that deletion mechanisms function as documented.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-3.5/R01",
+          "text": "Retention requirements including vendor policies documented"
+        },
+        {
+          "id": "AC-3.5/R02",
+          "text": "Retention requirements enforced"
+        },
+        {
+          "id": "AC-3.5/R03",
+          "text": "Deletion mechanisms verified to function as documented"
+        }
+      ]
+    },
+    {
+      "id": "AC-3.6",
+      "domain_id": "AC-3",
+      "title": "Cross-Border Data Transfer Controls",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL identify AI services that process data outside the organization's home jurisdiction and SHALL ensure that cross-border data transfers comply with applicable data protection regulations, including contractual safeguards and transfer impact assessments.",
+      "source_requirement": "The organization SHALL identify AI services that process data outside the organization's home jurisdiction and SHALL ensure that cross-border data transfers comply with applicable data protection regulations, including contractual safeguards and transfer impact assessments.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-3.6/R01",
+          "text": "Out-of-home-jurisdiction processing identified"
+        },
+        {
+          "id": "AC-3.6/R02",
+          "text": "Applicable transfer safeguards evidenced"
+        },
+        {
+          "id": "AC-3.6/R03",
+          "text": "Applicable transfer impact assessments evidenced"
+        }
+      ]
+    },
+    {
+      "id": "AC-3.7",
+      "domain_id": "AC-3",
+      "title": "RAG and Vector Store Security",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL secure retrieval-augmented generation (RAG) pipelines and vector stores end-to-end, including (a) classifying and filtering source documents before embedding so that data above the consuming agent's authorization level is not indexed, (b) enforcing access control, encryption at rest, and network isolation on each vector store, (c) treating retrieved content as untrusted input subject to AC-10.5 prompt injection defenses, (d) producing source citations or provenance metadata with every RAG response so users can verify what was retrieved, (e) maintaining an inventory of vector stores with their embedding model, source corpus, refresh cadence, and tenant scope, and (f) enforcing tenant isolation in multi-tenant RAG deployments such that one tenant's queries cannot retrieve another tenant's embeddings.",
+      "source_requirement": "The organization SHALL secure retrieval-augmented generation (RAG) pipelines and vector stores end-to-end, including (a) classifying and filtering source documents before embedding so that data above the consuming agent's authorization level is not indexed, (b) enforcing access control, encryption at rest, and network isolation on each vector store, (c) treating retrieved content as untrusted input subject to AC-10.5 prompt injection defenses, (d) producing source citations or provenance metadata with every RAG response so users can verify what was retrieved, (e) maintaining an inventory of vector stores with their embedding model, source corpus, refresh cadence, and tenant scope, and (f) enforcing tenant isolation in multi-tenant RAG deployments such that one tenant's queries cannot retrieve another tenant's embeddings.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-3.7/R01",
+          "text": "Sources classified/filtered before embedding against consuming authority"
+        },
+        {
+          "id": "AC-3.7/R02",
+          "text": "Store access controlled, encrypted and network isolated"
+        },
+        {
+          "id": "AC-3.7/R03",
+          "text": "Retrieved content treated as untrusted with injection defenses"
+        },
+        {
+          "id": "AC-3.7/R04",
+          "text": "Every response includes citations/provenance"
+        },
+        {
+          "id": "AC-3.7/R05",
+          "text": "Stores inventoried with model, corpus, cadence and tenant scope"
+        },
+        {
+          "id": "AC-3.7/R06",
+          "text": "Multi-tenant retrieval isolation enforced where applicable"
+        }
+      ]
+    },
+    {
+      "id": "AC-4.1",
+      "domain_id": "AC-4",
+      "title": "Role-Based Access Control for AI Tools",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL enforce role-based or attribute-based access control for all AI systems, ensuring that access is granted based on job function and business need, with different permission levels for standard users, power users, and administrators.",
+      "source_requirement": "The organization SHALL enforce role-based or attribute-based access control for all AI systems, ensuring that access is granted based on job function and business need, with different permission levels for standard users, power users, and administrators.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-4.1/R01",
+          "text": "Role/attribute access enforced for every AI system"
+        },
+        {
+          "id": "AC-4.1/R02",
+          "text": "Grants based on job and business need"
+        },
+        {
+          "id": "AC-4.1/R03",
+          "text": "User/power-user/admin privileges differentiated as applicable"
+        }
+      ]
+    },
+    {
+      "id": "AC-4.2",
+      "domain_id": "AC-4",
+      "title": "Multi-Factor Authentication for AI Services",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL require multi-factor authentication (MFA) for all AI services that process internal, confidential, or restricted data, including web-based AI platforms, API management consoles, and AI administration interfaces.",
+      "source_requirement": "The organization SHALL require multi-factor authentication (MFA) for all AI services that process internal, confidential, or restricted data, including web-based AI platforms, API management consoles, and AI administration interfaces.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-4.2/R01",
+          "text": "MFA enforced for covered web services"
+        },
+        {
+          "id": "AC-4.2/R02",
+          "text": "MFA enforced for covered API consoles"
+        },
+        {
+          "id": "AC-4.2/R03",
+          "text": "MFA enforced for covered administration interfaces"
+        }
+      ]
+    },
+    {
+      "id": "AC-4.3",
+      "domain_id": "AC-4",
+      "title": "Privileged Access Management for AI",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL implement privileged access controls for AI administration functions, including model management, training pipeline access, data export capabilities, and platform configuration changes.",
+      "source_requirement": "The organization SHALL implement privileged access controls for AI administration functions, including model management, training pipeline access, data export capabilities, and platform configuration changes.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-4.3/R01",
+          "text": "Model management privileges controlled"
+        },
+        {
+          "id": "AC-4.3/R02",
+          "text": "Training pipeline privileges controlled"
+        },
+        {
+          "id": "AC-4.3/R03",
+          "text": "Data export privileges controlled"
+        },
+        {
+          "id": "AC-4.3/R04",
+          "text": "Platform configuration privileges controlled"
+        }
+      ]
+    },
+    {
+      "id": "AC-4.4",
+      "domain_id": "AC-4",
+      "title": "API Key and Secret Management",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL manage all AI API keys and secrets through a centralized secrets management system, with automated rotation at least every 90 days, access logging, and immediate revocation procedures for compromised credentials.",
+      "source_requirement": "The organization SHALL manage all AI API keys and secrets through a centralized secrets management system, with automated rotation at least every 90 days, access logging, and immediate revocation procedures for compromised credentials.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-4.4/R01",
+          "text": "All AI keys/secrets centrally managed"
+        },
+        {
+          "id": "AC-4.4/R02",
+          "text": "Automated rotation within 90 days"
+        },
+        {
+          "id": "AC-4.4/R03",
+          "text": "Secret access logged"
+        },
+        {
+          "id": "AC-4.4/R04",
+          "text": "Immediate compromised-credential revocation procedure works"
+        }
+      ]
+    },
+    {
+      "id": "AC-4.5",
+      "domain_id": "AC-4",
+      "title": "AI Access Review and Recertification",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL conduct access reviews for all AI systems at least every 90 days, verifying that access remains appropriate for each user's current role and removing access for users who have changed roles or left the organization.",
+      "source_requirement": "The organization SHALL conduct access reviews for all AI systems at least every 90 days, verifying that access remains appropriate for each user's current role and removing access for users who have changed roles or left the organization.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-4.5/R01",
+          "text": "Every AI system access grant reviewed within 90 days"
+        },
+        {
+          "id": "AC-4.5/R02",
+          "text": "Review checks current role appropriateness"
+        },
+        {
+          "id": "AC-4.5/R03",
+          "text": "Changed-role and departed-user access removed"
+        }
+      ]
+    },
+    {
+      "id": "AC-4.6",
+      "domain_id": "AC-4",
+      "title": "AI Integration Controls",
+      "normative_level": "SHALL",
+      "requirement": "For AI integrations that access protected data or invoke privileged actions, the organization SHALL enforce least-privilege, scoped and revocable authorization at the execution boundary; isolate tenant and user context; and verify that untrusted model output cannot grant or expand authorization.",
+      "source_requirement": "The organization SHOULD maintain an approved-integration list governing which AI tools and agents may connect to internal systems, databases, and APIs, and SHOULD require a security review scoping each integration to least privilege before access is granted.",
+      "semantic_change": true,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-4.6/R01",
+          "text": "Protected/privileged integrations use least-privilege scoped authorization"
+        },
+        {
+          "id": "AC-4.6/R02",
+          "text": "Authorization revocable at execution boundary"
+        },
+        {
+          "id": "AC-4.6/R03",
+          "text": "Tenant/user context isolated"
+        },
+        {
+          "id": "AC-4.6/R04",
+          "text": "Untrusted output cannot grant or expand authority"
+        }
+      ]
+    },
+    {
+      "id": "AC-5.1",
+      "domain_id": "AC-5",
+      "title": "AI Vendor Risk Assessment",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL conduct a security risk assessment for each AI vendor before deployment and annually thereafter, evaluating the vendor's data handling practices, security posture, compliance certifications, and contractual data protection commitments.",
+      "source_requirement": "The organization SHALL conduct a security risk assessment for each AI vendor before deployment and annually thereafter, evaluating the vendor's data handling practices, security posture, compliance certifications, and contractual data protection commitments.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-5.1/R01",
+          "text": "Each vendor assessed before deployment and annually"
+        },
+        {
+          "id": "AC-5.1/R02",
+          "text": "Data handling assessed"
+        },
+        {
+          "id": "AC-5.1/R03",
+          "text": "Security posture assessed"
+        },
+        {
+          "id": "AC-5.1/R04",
+          "text": "Certifications assessed"
+        },
+        {
+          "id": "AC-5.1/R05",
+          "text": "Contractual protection assessed"
+        }
+      ]
+    },
+    {
+      "id": "AC-5.2",
+      "domain_id": "AC-5",
+      "title": "Contractual Data Protection Terms",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL ensure that contracts with AI service providers include explicit data protection terms covering data ownership, processing limitations, retention and deletion obligations, breach notification requirements, and prohibitions on using customer data for model training without consent.",
+      "source_requirement": "The organization SHALL ensure that contracts with AI service providers include explicit data protection terms covering data ownership, processing limitations, retention and deletion obligations, breach notification requirements, and prohibitions on using customer data for model training without consent.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-5.2/R01",
+          "text": "Contracts cover data ownership"
+        },
+        {
+          "id": "AC-5.2/R02",
+          "text": "Contracts cover processing limitations"
+        },
+        {
+          "id": "AC-5.2/R03",
+          "text": "Contracts cover retention/deletion"
+        },
+        {
+          "id": "AC-5.2/R04",
+          "text": "Contracts cover breach notification"
+        },
+        {
+          "id": "AC-5.2/R05",
+          "text": "Contracts prohibit customer-data training without consent"
+        }
+      ]
+    },
+    {
+      "id": "AC-5.3",
+      "domain_id": "AC-5",
+      "title": "Model Provenance Verification",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL verify the provenance of AI models used in business operations, including the model source, training data lineage, version history, and any modifications made after deployment.",
+      "source_requirement": "The organization SHALL verify the provenance of AI models used in business operations, including the model source, training data lineage, version history, and any modifications made after deployment.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-5.3/R01",
+          "text": "Model source provenance verified"
+        },
+        {
+          "id": "AC-5.3/R02",
+          "text": "Training-data lineage verified"
+        },
+        {
+          "id": "AC-5.3/R03",
+          "text": "Model version history verified"
+        },
+        {
+          "id": "AC-5.3/R04",
+          "text": "Post-deployment modifications verified"
+        }
+      ]
+    },
+    {
+      "id": "AC-5.4",
+      "domain_id": "AC-5",
+      "title": "Third-Party AI Security Monitoring",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL monitor the security posture of critical AI vendors on an ongoing basis, including tracking vendor security incidents, service disruptions, terms of service changes, and regulatory enforcement actions.",
+      "source_requirement": "The organization SHALL monitor the security posture of critical AI vendors on an ongoing basis, including tracking vendor security incidents, service disruptions, terms of service changes, and regulatory enforcement actions.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-5.4/R01",
+          "text": "Critical-vendor security monitored ongoing"
+        },
+        {
+          "id": "AC-5.4/R02",
+          "text": "Vendor incidents tracked"
+        },
+        {
+          "id": "AC-5.4/R03",
+          "text": "Service disruptions tracked"
+        },
+        {
+          "id": "AC-5.4/R04",
+          "text": "Terms changes tracked"
+        },
+        {
+          "id": "AC-5.4/R05",
+          "text": "Regulatory enforcement tracked"
+        }
+      ]
+    },
+    {
+      "id": "AC-5.5",
+      "domain_id": "AC-5",
+      "title": "Vendor Termination and Data Return",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL maintain documented procedures for terminating AI vendor relationships, including data retrieval, confirmation of data deletion, credential revocation, and transition planning for dependent business processes.",
+      "source_requirement": "The organization SHALL maintain documented procedures for terminating AI vendor relationships, including data retrieval, confirmation of data deletion, credential revocation, and transition planning for dependent business processes.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-5.5/R01",
+          "text": "Termination procedures maintained"
+        },
+        {
+          "id": "AC-5.5/R02",
+          "text": "Data retrieval addressed"
+        },
+        {
+          "id": "AC-5.5/R03",
+          "text": "Data deletion confirmation addressed"
+        },
+        {
+          "id": "AC-5.5/R04",
+          "text": "Credential revocation addressed"
+        },
+        {
+          "id": "AC-5.5/R05",
+          "text": "Dependent-process transition addressed"
+        }
+      ]
+    },
+    {
+      "id": "AC-5.6",
+      "domain_id": "AC-5",
+      "title": "AI Vendor Monitoring",
+      "normative_level": "SHOULD",
+      "requirement": "The organization SHOULD monitor its AI vendors on an ongoing basis for security advisories, sub-processor and data-handling changes, and material service or policy updates, and SHOULD assign accountability for reviewing and acting on those changes.",
+      "source_requirement": "The organization SHOULD monitor its AI vendors on an ongoing basis for security advisories, sub-processor and data-handling changes, and material service or policy updates, and SHOULD assign accountability for reviewing and acting on those changes.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-5.6/R01",
+          "text": "Ongoing advisories monitored"
+        },
+        {
+          "id": "AC-5.6/R02",
+          "text": "Subprocessor/data-handling changes monitored"
+        },
+        {
+          "id": "AC-5.6/R03",
+          "text": "Material service/policy updates monitored"
+        },
+        {
+          "id": "AC-5.6/R04",
+          "text": "Review/action accountability assigned"
+        }
+      ]
+    },
+    {
+      "id": "AC-6.1",
+      "domain_id": "AC-6",
+      "title": "Human Review Processes for High-Risk AI Outputs",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL require documented human review and approval for AI-generated outputs used in regulated decision-making, client-facing communications, financial reporting, legal analysis, medical recommendations, and any context where errors carry material business or compliance risk.",
+      "source_requirement": "The organization SHALL require documented human review and approval for AI-generated outputs used in regulated decision-making, client-facing communications, financial reporting, legal analysis, medical recommendations, and any context where errors carry material business or compliance risk.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-6.1/R01",
+          "text": "Human review and approval required before covered consequential AI output use"
+        },
+        {
+          "id": "AC-6.1/R02",
+          "text": "Regulated decisions, client communications, finance, legal, medical and material-risk contexts covered as applicable"
+        }
+      ]
+    },
+    {
+      "id": "AC-6.2",
+      "domain_id": "AC-6",
+      "title": "Accuracy and Hallucination Monitoring",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL implement procedures to monitor the accuracy of AI-generated outputs, particularly for domain-specific queries where the AI system may generate plausible but incorrect information (hallucinations).",
+      "source_requirement": "The organization SHALL implement procedures to monitor the accuracy of AI-generated outputs, particularly for domain-specific queries where the AI system may generate plausible but incorrect information (hallucinations).",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-6.2/R01",
+          "text": "Accuracy monitoring procedures implemented"
+        },
+        {
+          "id": "AC-6.2/R02",
+          "text": "Domain-specific hallucination risks included"
+        }
+      ]
+    },
+    {
+      "id": "AC-6.3",
+      "domain_id": "AC-6",
+      "title": "Bias Detection and Mitigation",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL implement procedures to detect and mitigate bias in AI outputs, particularly for AI systems that influence decisions affecting individuals, including hiring, lending, insurance, and service delivery.",
+      "source_requirement": "The organization SHALL implement procedures to detect and mitigate bias in AI outputs, particularly for AI systems that influence decisions affecting individuals, including hiring, lending, insurance, and service delivery.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-6.3/R01",
+          "text": "Bias detection procedures implemented"
+        },
+        {
+          "id": "AC-6.3/R02",
+          "text": "Bias mitigation procedures implemented"
+        },
+        {
+          "id": "AC-6.3/R03",
+          "text": "Individual-affecting decision contexts covered where applicable"
+        }
+      ]
+    },
+    {
+      "id": "AC-6.4",
+      "domain_id": "AC-6",
+      "title": "AI Output Labeling and Disclosure",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL implement disclosure practices that inform recipients when content or decisions have been generated or substantially influenced by AI systems, in compliance with applicable transparency requirements.",
+      "source_requirement": "The organization SHALL implement disclosure practices that inform recipients when content or decisions have been generated or substantially influenced by AI systems, in compliance with applicable transparency requirements.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-6.4/R01",
+          "text": "Recipients informed of generated/substantially AI-influenced content/decisions"
+        },
+        {
+          "id": "AC-6.4/R02",
+          "text": "Applicable transparency duties fulfilled"
+        }
+      ]
+    },
+    {
+      "id": "AC-6.5",
+      "domain_id": "AC-6",
+      "title": "Automated Output Quality Controls",
+      "normative_level": "SHALL",
+      "requirement": "Where AI output can influence executable code, database queries, rendered active content, tool invocation, or a consequential decision, the organization SHALL apply context-appropriate validation and enforce authorization outside the model before use. Validation failures SHALL be safely rejected, recorded without unnecessary sensitive content, and tested against adversarial inputs.",
+      "source_requirement": "The organization SHOULD implement automated quality controls for AI outputs used in production workflows, including content filters, formatting validators, and consistency checks appropriate to the output context.",
+      "semantic_change": true,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-6.5/R01",
+          "text": "Context-appropriate validation for executable/query/active-content/tool/consequential sinks"
+        },
+        {
+          "id": "AC-6.5/R02",
+          "text": "Authorization outside model before use"
+        },
+        {
+          "id": "AC-6.5/R03",
+          "text": "Invalid outputs safely rejected"
+        },
+        {
+          "id": "AC-6.5/R04",
+          "text": "Failures recorded without unnecessary sensitive content"
+        },
+        {
+          "id": "AC-6.5/R05",
+          "text": "Adversarial validation performed"
+        }
+      ]
+    },
+    {
+      "id": "AC-6.6",
+      "domain_id": "AC-6",
+      "title": "Synthetic Content Provenance and Marking",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL maintain a modality-specific synthetic-content provenance and disclosure process for externally published AI content; SHALL apply and preserve machine-readable provenance where the approved pipeline supports a verified mechanism; SHALL document capability limitations and use clear human-readable disclosure where machine-readable provenance is unavailable; SHALL evaluate incoming content used in consequential decisions for provenance and authenticity without treating missing markers as proof of human origin; and SHALL disclose synthetic depictions of real persons or events to recipients. Applicable legal marking and disclosure obligations SHALL be separately identified and fulfilled and SHALL not be waived by a technical-capability exception.",
+      "source_requirement": "The organization SHALL embed machine-readable provenance metadata (such as C2PA Content Credentials, SynthID, or equivalent watermarking) in AI-generated image, video, audio, and text content that it publishes externally; SHALL preserve that metadata through editing, transcoding, and storage workflows; SHALL evaluate externally received content used in decisions or downstream publication for synthetic-content markers; and SHALL provide clear human-readable disclosure on any deepfake or AI-generated depiction of real persons or events that it publishes, consistent with EU AI Act Article 50(2) and 50(4) where applicable.",
+      "semantic_change": true,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-6.6/R01",
+          "text": "Modality-specific external-content provenance/disclosure process maintained"
+        },
+        {
+          "id": "AC-6.6/R02",
+          "text": "Verified supported machine-readable provenance applied/preserved"
+        },
+        {
+          "id": "AC-6.6/R03",
+          "text": "Unsupported capability documented with clear disclosure fallback"
+        },
+        {
+          "id": "AC-6.6/R04",
+          "text": "Consequential incoming content evaluated without equating absent markers with human origin"
+        },
+        {
+          "id": "AC-6.6/R05",
+          "text": "Synthetic real-person/event depictions disclosed"
+        },
+        {
+          "id": "AC-6.6/R06",
+          "text": "Applicable legal marking/disclosure duties identified and fulfilled without capability waiver"
+        }
+      ]
+    },
+    {
+      "id": "AC-7.1",
+      "domain_id": "AC-7",
+      "title": "AI-Specific Incident Response Playbooks",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL develop and maintain incident response playbooks that address AI-specific incident types, including data exposure through AI prompts, AI-generated output failures with business impact, unauthorized AI model access or manipulation, AI vendor security incidents, and algorithmic discrimination discovery.",
+      "source_requirement": "The organization SHALL develop and maintain incident response playbooks that address AI-specific incident types, including data exposure through AI prompts, AI-generated output failures with business impact, unauthorized AI model access or manipulation, AI vendor security incidents, and algorithmic discrimination discovery.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-7.1/R01",
+          "text": "AI incident playbooks maintained"
+        },
+        {
+          "id": "AC-7.1/R02",
+          "text": "Prompt exposure covered"
+        },
+        {
+          "id": "AC-7.1/R03",
+          "text": "Harmful output covered"
+        },
+        {
+          "id": "AC-7.1/R04",
+          "text": "Unauthorized model access/manipulation covered"
+        },
+        {
+          "id": "AC-7.1/R05",
+          "text": "Vendor incidents covered"
+        },
+        {
+          "id": "AC-7.1/R06",
+          "text": "Discrimination discovery covered"
+        }
+      ]
+    },
+    {
+      "id": "AC-7.2",
+      "domain_id": "AC-7",
+      "title": "AI Incident Escalation and Communication",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL define clear escalation paths for AI security incidents, including criteria for escalating to executive leadership, legal counsel, external regulators, and affected data subjects.",
+      "source_requirement": "The organization SHALL define clear escalation paths for AI security incidents, including criteria for escalating to executive leadership, legal counsel, external regulators, and affected data subjects.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-7.2/R01",
+          "text": "Clear incident escalation paths defined"
+        },
+        {
+          "id": "AC-7.2/R02",
+          "text": "Executive escalation criteria defined"
+        },
+        {
+          "id": "AC-7.2/R03",
+          "text": "Legal escalation criteria defined"
+        },
+        {
+          "id": "AC-7.2/R04",
+          "text": "Regulator escalation criteria defined where applicable"
+        },
+        {
+          "id": "AC-7.2/R05",
+          "text": "Affected-person escalation criteria defined where applicable"
+        }
+      ]
+    },
+    {
+      "id": "AC-7.3",
+      "domain_id": "AC-7",
+      "title": "AI Incident Classification and Severity",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL classify AI security incidents using a severity framework that accounts for data sensitivity, blast radius, regulatory impact, and whether the incident involves algorithmic discrimination or affects consumer rights.",
+      "source_requirement": "The organization SHALL classify AI security incidents using a severity framework that accounts for data sensitivity, blast radius, regulatory impact, and whether the incident involves algorithmic discrimination or affects consumer rights.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-7.3/R01",
+          "text": "AI incident severity framework implemented"
+        },
+        {
+          "id": "AC-7.3/R02",
+          "text": "Sensitivity and blast radius included"
+        },
+        {
+          "id": "AC-7.3/R03",
+          "text": "Regulatory impact included"
+        },
+        {
+          "id": "AC-7.3/R04",
+          "text": "Discrimination and consumer rights included"
+        }
+      ]
+    },
+    {
+      "id": "AC-7.4",
+      "domain_id": "AC-7",
+      "title": "Post-Incident Review and Lessons Learned",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL conduct a post-incident review for all AI security incidents rated high or critical severity, documenting root causes, contributing factors, remediation actions, and improvements to prevent recurrence. The organization SHALL complete the documented review within 30 calendar days after containment of a high or critical AI security incident; ongoing investigations SHALL have a dated interim review within that period and tracked finalization.",
+      "source_requirement": "The organization SHALL conduct a post-incident review for all AI security incidents rated high or critical severity, documenting root causes, contributing factors, remediation actions, and improvements to prevent recurrence.",
+      "semantic_change": true,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-7.4/R01",
+          "text": "Every high/critical incident reviewed"
+        },
+        {
+          "id": "AC-7.4/R02",
+          "text": "Causes and contributing factors documented"
+        },
+        {
+          "id": "AC-7.4/R03",
+          "text": "Remediation and recurrence prevention documented"
+        },
+        {
+          "id": "AC-7.4/R04",
+          "text": "Final/interim review within 30 days of containment with tracked finalization"
+        }
+      ]
+    },
+    {
+      "id": "AC-7.5",
+      "domain_id": "AC-7",
+      "title": "Regulatory Notification Procedures",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL maintain documented procedures for notifying regulators and affected individuals of AI security incidents as required by applicable law, including specific notification timelines and content requirements for each applicable regulation.",
+      "source_requirement": "The organization SHALL maintain documented procedures for notifying regulators and affected individuals of AI security incidents as required by applicable law, including specific notification timelines and content requirements for each applicable regulation.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-7.5/R01",
+          "text": "Applicable regulator/person notification procedures maintained"
+        },
+        {
+          "id": "AC-7.5/R02",
+          "text": "Applicable timelines documented"
+        },
+        {
+          "id": "AC-7.5/R03",
+          "text": "Applicable content requirements documented"
+        }
+      ]
+    },
+    {
+      "id": "AC-8.1",
+      "domain_id": "AC-8",
+      "title": "AI Usage Logging",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL log AI system usage at a sufficient level of detail to support security monitoring, policy compliance verification, and incident investigation, including user identity, timestamp, AI service accessed, and general interaction type.",
+      "source_requirement": "The organization SHALL log AI system usage at a sufficient level of detail to support security monitoring, policy compliance verification, and incident investigation, including user identity, timestamp, AI service accessed, and general interaction type.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-8.1/R01",
+          "text": "Usage logging supports monitoring/compliance/investigation"
+        },
+        {
+          "id": "AC-8.1/R02",
+          "text": "User identity captured"
+        },
+        {
+          "id": "AC-8.1/R03",
+          "text": "Timestamp captured"
+        },
+        {
+          "id": "AC-8.1/R04",
+          "text": "AI service captured"
+        },
+        {
+          "id": "AC-8.1/R05",
+          "text": "General interaction type captured"
+        }
+      ]
+    },
+    {
+      "id": "AC-8.2",
+      "domain_id": "AC-8",
+      "title": "AI Anomaly Detection",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL implement detection capabilities for anomalous AI usage patterns, including unusual data volumes, access from unexpected locations, off-hours usage patterns, and rapid escalation in AI consumption that may indicate data exfiltration or compromised accounts.",
+      "source_requirement": "The organization SHALL implement detection capabilities for anomalous AI usage patterns, including unusual data volumes, access from unexpected locations, off-hours usage patterns, and rapid escalation in AI consumption that may indicate data exfiltration or compromised accounts.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-8.2/R01",
+          "text": "Anomaly detection implemented"
+        },
+        {
+          "id": "AC-8.2/R02",
+          "text": "Unusual volume covered"
+        },
+        {
+          "id": "AC-8.2/R03",
+          "text": "Unexpected locations covered"
+        },
+        {
+          "id": "AC-8.2/R04",
+          "text": "Off-hours usage covered"
+        },
+        {
+          "id": "AC-8.2/R05",
+          "text": "Rapid consumption escalation covered"
+        }
+      ]
+    },
+    {
+      "id": "AC-8.3",
+      "domain_id": "AC-8",
+      "title": "Prompt and Response Logging",
+      "normative_level": "SHOULD",
+      "requirement": "For AI systems processing confidential or restricted data, the organization SHOULD implement prompt and response logging sufficient to support incident investigation, data exposure analysis, and compliance auditing, subject to applicable privacy and data retention requirements.",
+      "source_requirement": "For AI systems processing confidential or restricted data, the organization SHOULD implement prompt and response logging sufficient to support incident investigation, data exposure analysis, and compliance auditing, subject to applicable privacy and data retention requirements.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-8.3/R01",
+          "text": "Confidential/restricted prompt-response logging supports investigation/exposure/audit where adopted"
+        },
+        {
+          "id": "AC-8.3/R02",
+          "text": "Privacy and retention constraints respected"
+        }
+      ]
+    },
+    {
+      "id": "AC-8.4",
+      "domain_id": "AC-8",
+      "title": "AI Performance and Availability Monitoring",
+      "normative_level": "SHALL",
+      "requirement": "For mission-critical AI systems, the organization SHALL monitor system performance, availability, and response quality to detect degradation that could affect business operations or output reliability.",
+      "source_requirement": "For mission-critical AI systems, the organization SHALL monitor system performance, availability, and response quality to detect degradation that could affect business operations or output reliability.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-8.4/R01",
+          "text": "Mission-critical performance monitored"
+        },
+        {
+          "id": "AC-8.4/R02",
+          "text": "Mission-critical availability monitored"
+        },
+        {
+          "id": "AC-8.4/R03",
+          "text": "Mission-critical response quality monitored"
+        }
+      ]
+    },
+    {
+      "id": "AC-8.5",
+      "domain_id": "AC-8",
+      "title": "Log Retention and Integrity",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL define and enforce retention periods for each AI log class, based on documented investigation, operational, contractual and applicable legal needs; SHALL minimize sensitive content; and SHALL protect retained records against unauthorized modification or deletion and verify authorized disposal.",
+      "source_requirement": "The organization SHALL retain AI-related logs for a minimum of 12 months in a manner that preserves log integrity and prevents unauthorized modification or deletion.",
+      "semantic_change": true,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-8.5/R01",
+          "text": "Per-log-class retention defined/enforced against documented needs"
+        },
+        {
+          "id": "AC-8.5/R02",
+          "text": "Sensitive content minimized"
+        },
+        {
+          "id": "AC-8.5/R03",
+          "text": "Retained records protected from unauthorized change/deletion"
+        },
+        {
+          "id": "AC-8.5/R04",
+          "text": "Authorized disposal verified"
+        }
+      ]
+    },
+    {
+      "id": "AC-9.1",
+      "domain_id": "AC-9",
+      "title": "AI Security Awareness Program",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL include AI-specific security topics in its security awareness program, delivered to all employees within 30 days of hire and refreshed at least annually, covering AI-related risks, organizational policies, and individual responsibilities.",
+      "source_requirement": "The organization SHALL include AI-specific security topics in its security awareness program, delivered to all employees within 30 days of hire and refreshed at least annually, covering AI-related risks, organizational policies, and individual responsibilities.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-9.1/R01",
+          "text": "All employees receive AI awareness within 30 days of hire"
+        },
+        {
+          "id": "AC-9.1/R02",
+          "text": "Annual refresh completed"
+        },
+        {
+          "id": "AC-9.1/R03",
+          "text": "AI risks, policies and responsibilities covered"
+        }
+      ]
+    },
+    {
+      "id": "AC-9.2",
+      "domain_id": "AC-9",
+      "title": "Role-Based AI Training",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL provide additional role-specific AI security training to personnel in high-risk roles, including IT administrators managing AI platforms, developers integrating AI APIs, data scientists working with models, and personnel using AI in regulated decision-making.",
+      "source_requirement": "The organization SHALL provide additional role-specific AI security training to personnel in high-risk roles, including IT administrators managing AI platforms, developers integrating AI APIs, data scientists working with models, and personnel using AI in regulated decision-making.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-9.2/R01",
+          "text": "Additional training provided for applicable high-risk roles"
+        },
+        {
+          "id": "AC-9.2/R02",
+          "text": "AI administrators covered"
+        },
+        {
+          "id": "AC-9.2/R03",
+          "text": "AI developers covered"
+        },
+        {
+          "id": "AC-9.2/R04",
+          "text": "Data scientists covered"
+        },
+        {
+          "id": "AC-9.2/R05",
+          "text": "Regulated-decision users covered"
+        }
+      ]
+    },
+    {
+      "id": "AC-9.3",
+      "domain_id": "AC-9",
+      "title": "AI Acceptable Use Policy Communication",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL ensure that the AI Acceptable Use Policy is communicated to all employees with documented acknowledgment, and that policy updates are communicated within 30 days of approval with re-acknowledgment required.",
+      "source_requirement": "The organization SHALL ensure that the AI Acceptable Use Policy is communicated to all employees with documented acknowledgment, and that policy updates are communicated within 30 days of approval with re-acknowledgment required.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-9.3/R01",
+          "text": "AUP communicated with employee acknowledgment"
+        },
+        {
+          "id": "AC-9.3/R02",
+          "text": "Updates communicated within 30 days of approval"
+        },
+        {
+          "id": "AC-9.3/R03",
+          "text": "Updated AUP reacknowledged"
+        }
+      ]
+    },
+    {
+      "id": "AC-9.4",
+      "domain_id": "AC-9",
+      "title": "AI Threat Awareness",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL include AI-specific threat vectors in its security awareness program, covering social engineering using AI-generated content (deepfakes, voice cloning, AI-generated phishing), AI-enabled attack techniques, and the risks of adversarial manipulation of organizational AI systems.",
+      "source_requirement": "The organization SHALL include AI-specific threat vectors in its security awareness program, covering social engineering using AI-generated content (deepfakes, voice cloning, AI-generated phishing), AI-enabled attack techniques, and the risks of adversarial manipulation of organizational AI systems.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-9.4/R01",
+          "text": "AI threat vectors included in awareness"
+        },
+        {
+          "id": "AC-9.4/R02",
+          "text": "Deepfake/voice/phishing social engineering included"
+        },
+        {
+          "id": "AC-9.4/R03",
+          "text": "AI-enabled attack techniques included"
+        },
+        {
+          "id": "AC-9.4/R04",
+          "text": "Adversarial manipulation risks included"
+        }
+      ]
+    },
+    {
+      "id": "AC-9.5",
+      "domain_id": "AC-9",
+      "title": "Executive and Board AI Literacy",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL ensure that executive leadership and board members (or equivalent governing body) receive AI literacy training at least annually, covering AI capabilities and limitations, organizational AI risk exposure, regulatory obligations, and the governance body's oversight responsibilities for AI systems.",
+      "source_requirement": "The organization SHALL ensure that executive leadership and board members (or equivalent governing body) receive AI literacy training at least annually, covering AI capabilities and limitations, organizational AI risk exposure, regulatory obligations, and the governance body's oversight responsibilities for AI systems.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-9.5/R01",
+          "text": "Executives/governing-body receive annual AI literacy"
+        },
+        {
+          "id": "AC-9.5/R02",
+          "text": "Capabilities/limits covered"
+        },
+        {
+          "id": "AC-9.5/R03",
+          "text": "Organizational exposure covered"
+        },
+        {
+          "id": "AC-9.5/R04",
+          "text": "Regulatory obligations covered"
+        },
+        {
+          "id": "AC-9.5/R05",
+          "text": "Oversight responsibilities covered"
+        }
+      ]
+    },
+    {
+      "id": "AC-10.1",
+      "domain_id": "AC-10",
+      "title": "Model Access Controls",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL enforce access controls on AI model endpoints, ensuring that model access is authenticated, authorized, and rate-limited to prevent unauthorized use, abuse, or data extraction.",
+      "source_requirement": "The organization SHALL enforce access controls on AI model endpoints, ensuring that model access is authenticated, authorized, and rate-limited to prevent unauthorized use, abuse, or data extraction.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-10.1/R01",
+          "text": "Model access authenticated"
+        },
+        {
+          "id": "AC-10.1/R02",
+          "text": "Model access authorized"
+        },
+        {
+          "id": "AC-10.1/R03",
+          "text": "Model access rate-limited against abuse/extraction"
+        }
+      ]
+    },
+    {
+      "id": "AC-10.2",
+      "domain_id": "AC-10",
+      "title": "Adversarial Testing",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL conduct adversarial testing of AI systems used in high-risk or production contexts at least annually and after any significant model update, including prompt injection testing, data extraction attempts, and jailbreak testing to identify vulnerabilities in model behavior and safety controls.",
+      "source_requirement": "The organization SHALL conduct adversarial testing of AI systems used in high-risk or production contexts at least annually and after any significant model update, including prompt injection testing, data extraction attempts, and jailbreak testing to identify vulnerabilities in model behavior and safety controls.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-10.2/R01",
+          "text": "High-risk/production adversarial testing annually"
+        },
+        {
+          "id": "AC-10.2/R02",
+          "text": "Testing after significant model update"
+        },
+        {
+          "id": "AC-10.2/R03",
+          "text": "Injection tested"
+        },
+        {
+          "id": "AC-10.2/R04",
+          "text": "Extraction tested"
+        },
+        {
+          "id": "AC-10.2/R05",
+          "text": "Jailbreaks tested"
+        }
+      ]
+    },
+    {
+      "id": "AC-10.3",
+      "domain_id": "AC-10",
+      "title": "Model Versioning and Rollback",
+      "normative_level": "SHALL",
+      "requirement": "For self-hosted or fine-tuned models, the organization SHALL maintain version control and rollback capabilities, ensuring that any model deployment can be reverted to a previous known-good version within a defined recovery time objective. Rollback capability SHALL be exercised at least annually and after a material change to deployment or recovery architecture.",
+      "source_requirement": "For self-hosted or fine-tuned models, the organization SHALL maintain version control and rollback capabilities, ensuring that any model deployment can be reverted to a previous known-good version within a defined recovery time objective.",
+      "semantic_change": true,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-10.3/R01",
+          "text": "Applicable self-hosted/fine-tuned models version controlled"
+        },
+        {
+          "id": "AC-10.3/R02",
+          "text": "Known-good rollback within defined RTO"
+        },
+        {
+          "id": "AC-10.3/R03",
+          "text": "Rollback exercised annually and after material deployment/recovery change"
+        }
+      ]
+    },
+    {
+      "id": "AC-10.4",
+      "domain_id": "AC-10",
+      "title": "Model Integrity Verification",
+      "normative_level": "SHALL",
+      "requirement": "For self-hosted models, the organization SHALL implement integrity verification procedures to ensure that deployed models have not been tampered with, corrupted, or substituted since their approved deployment.",
+      "source_requirement": "For self-hosted models, the organization SHALL implement integrity verification procedures to ensure that deployed models have not been tampered with, corrupted, or substituted since their approved deployment.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-10.4/R01",
+          "text": "Applicable self-hosted artifact integrity verified against trusted approved deployment"
+        },
+        {
+          "id": "AC-10.4/R02",
+          "text": "Tamper/corruption/substitution detected or rejected"
+        }
+      ]
+    },
+    {
+      "id": "AC-10.5",
+      "domain_id": "AC-10",
+      "title": "Prompt Injection Defense",
+      "normative_level": "SHALL",
+      "requirement": "The organization SHALL implement defenses against prompt injection attacks for AI systems that process external inputs, including input validation, system prompt protection, and output filtering to prevent manipulation of AI behavior through adversarial inputs.",
+      "source_requirement": "The organization SHALL implement defenses against prompt injection attacks for AI systems that process external inputs, including input validation, system prompt protection, and output filtering to prevent manipulation of AI behavior through adversarial inputs.",
+      "semantic_change": false,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-10.5/R01",
+          "text": "External-input injection defenses implemented"
+        },
+        {
+          "id": "AC-10.5/R02",
+          "text": "Input validation implemented"
+        },
+        {
+          "id": "AC-10.5/R03",
+          "text": "System-prompt protection implemented"
+        },
+        {
+          "id": "AC-10.5/R04",
+          "text": "Output filtering implemented"
+        },
+        {
+          "id": "AC-10.5/R05",
+          "text": "Observed authority/data-boundary bypass prevented in scoped tests"
+        }
+      ]
+    },
+    {
+      "id": "AC-10.6",
+      "domain_id": "AC-10",
+      "title": "Agentic AI Action Authorization and Guardrails",
+      "normative_level": "SHALL",
+      "requirement": "For agentic AI systems, the organization SHALL verify every applicable agent-security facet defined by the selected workload profile. The system SHALL not rely on model instructions alone to enforce identity, authorization, isolation, approval, or safe termination.",
+      "source_requirement": "The organization SHALL constrain agentic AI systems — any AI workflow that invokes tools, calls APIs, executes code, browses systems, or otherwise takes autonomous action — through (a) a documented per-agent tool inventory granted on a least-privilege basis tied to a specific use case, (b) explicit human-in-the-loop approval gates before any irreversible or high-impact action (data deletion, schema changes, financial transfers, account suspension, code merges to protected branches, outbound communication to customers, production configuration changes), (c) blast-radius limits enforced server-side — per-session rate caps, monetary ceilings, row-count limits, and scope predicates that the agent cannot rewrite — (d) acting-on-behalf-of authorization in which an agent invoked by a user inherits that user's permission scope (never broader) and every action is logged with both the agent identity and the originating human principal, (e) per-tool-invocation logging capturing tool name, input arguments, output, agent identity, human principal, session ID, and decision outcome, (f) version control, code review, and integrity protection for tool definitions, agent system prompts, and agent configurations such that changes follow the same change-management path as production code, and (g) for computer-use, browser-use, or shell-execution agents, restriction of execution to ephemeral isolated sandboxes with explicit user confirmation before any persistent state change outside the sandbox.",
+      "semantic_change": true,
+      "criteria_status": "draft interpretation — semantic review required",
+      "criteria": [
+        {
+          "id": "AC-10.6/INV",
+          "text": "Maintain per-agent tool inventory tied to a justified least-privilege use case"
+        },
+        {
+          "id": "AC-10.6/R01",
+          "text": "The system SHALL bind each tool action to authenticated actor, tenant, delegated scope and permitted purpose, and reject revoked or expired authority."
+        },
+        {
+          "id": "AC-10.6/R02",
+          "text": "Consequential actions SHALL require policy-defined approval bound to exact action, parameters, actor and expiry; changed parameters SHALL invalidate approval."
+        },
+        {
+          "id": "AC-10.6/R03",
+          "text": "Untrusted instructions from retrieved content, tools, messages or memory SHALL not expand the agent's authority or bypass execution policy."
+        },
+        {
+          "id": "AC-10.6/R04",
+          "text": "Persistent memory SHALL have scoped read/write permissions, provenance, expiry and controlled deletion, and SHALL not confer authorization."
+        },
+        {
+          "id": "AC-10.6/R05",
+          "text": "Agent-to-agent messages SHALL carry verifiable origin and delegated scope; recipients SHALL validate them and reject unauthorized task escalation."
+        },
+        {
+          "id": "AC-10.6/R06",
+          "text": "Tool and protocol connections, including MCP where used, SHALL validate trusted endpoints, identities, permissions and approved capability changes."
+        },
+        {
+          "id": "AC-10.6/R07",
+          "text": "Execution SHALL enforce bounds on cost, time, recursion and privileged activity and SHALL support tested suspension and termination."
+        },
+        {
+          "id": "AC-10.6/R08",
+          "text": "Recovery SHALL use idempotency where supported, detect and reconcile uncertain or duplicate consequential actions, and verify state integrity before autonomous execution resumes. Blind retries of actions with uncertain external state SHALL be suspended pending reconciliation."
+        },
+        {
+          "id": "AC-10.6/R09",
+          "text": "Agent prompts, tool definitions and configuration SHALL be version-controlled, reviewed under the production change process and integrity-protected against unapproved modification."
+        },
+        {
+          "id": "AC-10.6/R10",
+          "text": "Invocation-decision records SHALL link actor, agent, operation, policy, approval where required and execution outcome, and SHALL minimize sensitive content and be protected against unauthorized modification/access under the log-retention policy."
+        },
+        {
+          "id": "AC-10.6/R11",
+          "text": "Computer-, browser- and shell-use execution SHALL be isolated from unauthorized tenant/session resources, enforce scoped network egress and persistence, and require applicable Appendix B approval before consequential external state changes."
+        }
+      ]
+    }
+  ]
+}

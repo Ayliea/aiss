@@ -1,0 +1,80 @@
+{
+  "pass": {
+    "overall": "conformant-to-declared-draft-profile",
+    "parent": "pass"
+  },
+  "mandatory-failure": {
+    "overall": "not-conformant",
+    "parent": "partial"
+  },
+  "missing-evidence": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "low-confidence": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "stale-evidence": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "deleted-evidence": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "unperformed": {
+    "overall": "indeterminate",
+    "parent": "not-tested"
+  },
+  "unresolved-scope": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "missing-observation": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "missing-execution": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "approved-na": {
+    "overall": "no-applicable-mandatory-requirements",
+    "parent": "not-applicable"
+  },
+  "inherited-valid": {
+    "overall": "conformant-to-declared-draft-profile",
+    "parent": "pass"
+  },
+  "inherited-unverified": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "failure-with-uncertainty": {
+    "overall": "not-conformant",
+    "parent": "partial"
+  },
+  "corroborated-medium": {
+    "overall": "conformant-to-declared-draft-profile",
+    "parent": "pass"
+  },
+  "mapping-and": {
+    "overall": "indeterminate",
+    "parent": "unknown",
+    "mapping": "insufficient-evidence"
+  },
+  "mapping-or": {
+    "overall": "indeterminate",
+    "parent": "unknown",
+    "mapping": "supported"
+  },
+  "mapping-delta": {
+    "overall": "conformant-to-declared-draft-profile",
+    "parent": "pass",
+    "mapping": "insufficient-evidence"
+  },
+  "full-baseline-incomplete": {
+    "overall": "indeterminate"
+  }
+}

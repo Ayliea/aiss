@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "methodology_version": "2.0.0-pilot.1",
+  "status": "draft",
+  "evaluator_version": "pilot.1",
+  "source_commit": "055f55cceb0c92372178c8d73988c223f806be21",
+  "source_hashes": {
+    "spec/aiss-v1.3.json": "2601bde5e89d53df8f0c22962b471c369185a3d203506d65f10b121bad91162f",
+    "pilot/sources/rfc-0002.md": "31e3c23138c755bcffed5d09b4a7a7cfdaf6205347a52efaedb2f901749c2eae"
+  },
+  "files": {
+    "catalog.json": "b6eecb7cd288af7879153151a768d304aff52d16d24fa5c9520b640a479a3ef3",
+    "procedures.json": "b0b91cfc6e3fc27eca02de0522bf65bb8e42741e98eafc26586bbe62d61d2a18",
+    "criteria.py": "695b6ca88507d0bdccdfcbccc9178837bb33a4c03a34c9ab84a4cef60670e54c",
+    "evaluator.py": "665dc837a672ef0ccef2d98556b7528ef1e2230bb86ad5386717f8eef5d8bea6",
+    "policy.py": "ecc2dc8d754c177c80f7d13f08c07919c3fdee11043034d2fb8e0366ceeda13a",
+    "assessment.schema.json": "bb97d894fef25132255410705a1819e032644d4b18c674a3298a715d75c26ae3"
+  }
+}
