@@ -14,9 +14,9 @@ AISS is a controls framework purpose-built for organizations deploying generativ
 
 ## Why open-source the standard?
 
-Most compliance scoring is opaque. Vendors keep their methodology proprietary because that's where their pricing leverage lives. AISS takes the opposite position: **the standard is public, the scoring math is published, and the framework citations are auditable**. Customers and their auditors can reproduce any AISS score using only this document and the answers an organization provides.
+AISS publishes its controls, documented assessment methodology, and framework mappings. Keeping these materials public lets customers, assessors, and contributors inspect the assessment basis and propose improvements.
 
-This transparency is structural — VC-funded competitors structurally cannot publish their scoring because their entire business model depends on opacity.
+The current methodology documents maturity levels and conformance thresholds. Reproducing a numerical assessment score also requires the versioned answer rubrics, point values, weights, and calculation rules; these are not fully specified in the current public catalog.
 
 ## How it's structured
 
