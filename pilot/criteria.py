@@ -37,7 +37,7 @@ CRITERIA = {
     'AC-5.4': ['Critical-vendor security monitored ongoing', 'Vendor incidents tracked', 'Service disruptions tracked', 'Terms changes tracked', 'Regulatory enforcement tracked'],
     'AC-5.5': ['Termination procedures maintained', 'Data retrieval addressed', 'Data deletion confirmation addressed', 'Credential revocation addressed', 'Dependent-process transition addressed'],
     'AC-5.6': ['Ongoing advisories monitored', 'Subprocessor/data-handling changes monitored', 'Material service/policy updates monitored', 'Review/action accountability assigned'],
-    'AC-6.1': ['Human review and approval required before covered consequential AI output use', 'Regulated decisions, client communications, finance, legal, medical and material-risk contexts covered as applicable'],
+    'AC-6.1': ['Documented human review and approval required before covered consequential AI output use', 'Regulated decisions, client communications, finance, legal, medical and material-risk contexts covered as applicable'],
     'AC-6.2': ['Accuracy monitoring procedures implemented', 'Domain-specific hallucination risks included'],
     'AC-6.3': ['Bias detection procedures implemented', 'Bias mitigation procedures implemented', 'Individual-affecting decision contexts covered where applicable'],
     'AC-6.4': ['Recipients informed of generated/substantially AI-influenced content/decisions', 'Applicable transparency duties fulfilled'],

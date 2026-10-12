@@ -89,6 +89,30 @@
         "overall": "indeterminate",
         "parent": "unknown"
       },
+      "case": "attempted-without-execution-record",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "case": "undetermined-test-activity",
+      "expected": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "indeterminate",
+        "parent": "unknown"
+      },
       "case": "unresolved-scope",
       "expected": {
         "overall": "indeterminate",
@@ -231,12 +255,32 @@
         "overall": "indeterminate"
       },
       "passed": true
+    },
+    {
+      "actual": {
+        "overall": "conformant-to-declared-draft-profile"
+      },
+      "case": "provenance-capability-fallback",
+      "expected": {
+        "overall": "conformant-to-declared-draft-profile"
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "overall": "not-conformant"
+      },
+      "case": "provenance-unmet-legal-marking",
+      "expected": {
+        "overall": "not-conformant"
+      },
+      "passed": true
     }
   ],
   "controls": 59,
   "draft_criteria": 243,
   "independent_assessor_calibration": false,
-  "manifest_sha256": "82195527601a91559510c8a38856988047597e7381e54029fb7587824ee4e960",
+  "manifest_sha256": "dd93d060577532d219abc650993c88ce5f2f1e1c0486e80f7da1904c122a4904",
   "production_validation": false,
   "risk_matrix": [
     [
@@ -265,5 +309,5 @@
     ]
   ],
   "status": "synthetic-calibration-only",
-  "test_methods": 16
+  "test_methods": 29
 }

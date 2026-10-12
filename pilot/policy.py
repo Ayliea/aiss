@@ -45,9 +45,33 @@ def instant(value):
     return result.astimezone(timezone.utc)
 
 
+def bounded_parameters(parameters, rules):
+    """Closed scalar envelope. Composite tool schemas need a separate adapter."""
+    if not isinstance(rules,dict) or set(parameters)!=set(rules): return False
+    types={'string':lambda v:isinstance(v,str), 'integer':lambda v:type(v) is int,
+           'boolean':lambda v:type(v) is bool}
+    for key,value in parameters.items():
+        rule=rules[key]
+        if not isinstance(key,str) or not isinstance(rule,dict) or set(rule)-{'type','enum','minimum','maximum'}:
+            return False
+        kind=rule.get('type')
+        if kind not in types or not types[kind](value): return False
+        if 'enum' in rule:
+            allowed=rule['enum']
+            if not isinstance(allowed,list) or not allowed or any(not types[kind](x) for x in allowed) or value not in allowed:
+                return False
+        elif kind!='integer' or not {'minimum','maximum'}<=rule.keys():
+            return False  # No implicitly unbounded selectors or values.
+        if 'minimum' in rule or 'maximum' in rule:
+            if kind!='integer' or type(rule.get('minimum')) is not int or type(rule.get('maximum')) is not int:
+                return False
+            if not rule['minimum']<=value<=rule['maximum']: return False
+    return True
+
+
 def authorize(action, context, approval=None, grant=None):
     """Trusted context assertions stand in for real services, crypto and locking."""
-    required = ['principal', 'tenant', 'agent', 'tool_version', 'operation', 'resource', 'resource_version', 'policy_version', 'purpose', 'destination']
+    required = ['principal', 'tenant', 'agent', 'tool_version', 'operation', 'resource', 'resource_version', 'policy_version', 'purpose', 'destination', 'currency']
     for key in required:
         if not isinstance(action.get(key), str) or not action[key]: raise ValueError('Incomplete action binding')
     if type(action.get('cost_minor')) is not int or action['cost_minor'] < 0 or type(action.get('resource_count')) is not int or action['resource_count'] < 1:
@@ -55,6 +79,7 @@ def authorize(action, context, approval=None, grant=None):
     if not isinstance(action.get('currency'), str) or not action['currency']:
         raise ValueError('Currency must be explicit (NONE for nonfinancial action)')
     if not isinstance(action.get('parameters'), dict): raise ValueError('Typed parameters required')
+    action_binding(action)  # Reject non-JSON/nonfinite values in all classes.
     cls = classify(action)
     def deny(reason): return {'decision': 'deny', 'class': cls, 'reason': reason}
     if cls in ['AX', 'A4']: return deny('Prohibited/unknown or no accepted sector profile')
@@ -69,9 +94,8 @@ def authorize(action, context, approval=None, grant=None):
         if not grant: return deny('Bounded preauthorization missing')
         expected = {k: action[k] for k in required}
         if grant.get('binding') != expected or cls not in grant.get('classes', []): return deny('Grant scope mismatch')
-        fields = grant.get('parameter_fields')
-        if not isinstance(fields, list) or not all(isinstance(x, str) for x in fields): raise ValueError('Parameter field allowlist required')
-        if not set(action['parameters']) <= set(fields): return deny('Parameter fields exceed grant')
+        if not bounded_parameters(action['parameters'],grant.get('parameter_rules')):
+            return deny('Parameter types/values exceed bounded grant')
         if grant.get('revoked') is not False or instant(grant['expires']) <= now: return deny('Grant expired/revoked')
         for key in ['max_cost_minor', 'max_count', 'used_cost_minor', 'used_count']:
             if type(grant.get(key)) is not int or grant[key] < 0: raise ValueError('Concrete nonnegative grant limits required')

@@ -27,6 +27,14 @@
     "overall": "indeterminate",
     "parent": "not-tested"
   },
+  "attempted-without-execution-record": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
+  "undetermined-test-activity": {
+    "overall": "indeterminate",
+    "parent": "unknown"
+  },
   "unresolved-scope": {
     "overall": "indeterminate",
     "parent": "unknown"
@@ -76,5 +84,11 @@
   },
   "full-baseline-incomplete": {
     "overall": "indeterminate"
+  },
+  "provenance-capability-fallback": {
+    "overall": "conformant-to-declared-draft-profile"
+  },
+  "provenance-unmet-legal-marking": {
+    "overall": "not-conformant"
   }
 }

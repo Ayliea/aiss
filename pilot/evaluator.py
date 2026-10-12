@@ -2,8 +2,10 @@
 import argparse
 import hashlib
 import json
+import copy
 from datetime import date
 from pathlib import Path
+from schema_validation import canonical_date, validate
 
 ROOT = Path(__file__).resolve().parent
 STATES = {'pass', 'fail', 'unknown', 'not-tested'}
@@ -11,6 +13,12 @@ STATES = {'pass', 'fail', 'unknown', 'not-tested'}
 
 def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def assessment_digest(data):
+    """Pilot-specific canonical JSON binding; not a digital signature."""
+    text=json.dumps(data,sort_keys=True,separators=(',',':'),ensure_ascii=True,allow_nan=False)
+    return hashlib.sha256(text.encode('utf-8')).hexdigest()
 
 
 def obj(value, required, optional=()):
@@ -24,7 +32,7 @@ def string(value):
 
 
 def unique(values):
-    if not isinstance(values, list) or any(not isinstance(v, str) or not v for v in values) or len(values) != len(set(values)):
+    if not isinstance(values, list) or any(not isinstance(v, str) or not v.strip() for v in values) or len(values) != len(set(values)):
         raise ValueError('Expected unique string list')
 
 
@@ -42,7 +50,7 @@ def aggregate(states, unresolved=False):
 
 def load_release(root=ROOT):
     manifest = json.loads((root / 'manifest.json').read_text())
-    if manifest['status'] != 'draft' or manifest['evaluator_version'] != 'pilot.1':
+    if manifest['schema_version'] != '2' or manifest['status'] != 'draft' or manifest['evaluator_version'] != 'pilot.2':
         raise ValueError('Unsupported release')
     for name, expected in manifest['files'].items():
         if Path(name).name != name or digest(root / name) != expected:
@@ -55,11 +63,14 @@ def load_release(root=ROOT):
 
 def evaluate(data, root=ROOT):
     catalog, manifest_hash = load_release(root)
+    validate(data,json.loads((root/'assessment.schema.json').read_text()))
+    data=copy.deepcopy(data)
+    input_hash=assessment_digest(data)
     obj(data, ['assessment_id', 'manifest_sha256', 'as_of', 'profile', 'evidence', 'observations'], ['mappings', 'maturity_narratives'])
     string(data['assessment_id'])
     if data['manifest_sha256'] != manifest_hash:
         raise ValueError('Assessment not pinned to this release')
-    today = date.fromisoformat(data['as_of'])
+    today = canonical_date(data['as_of'])
     profile = data['profile']
     obj(profile, ['id', 'control_ids', 'scope_kind'])
     string(profile['id']); unique(profile['control_ids'])
@@ -85,7 +96,7 @@ def evaluate(data, root=ROOT):
         collected, expires = date.fromisoformat(e['collected_at']), date.fromisoformat(e['valid_until'])
         if collected > today or expires < collected:
             raise ValueError('Invalid evidence dates')
-        if e['origin'] != 'direct':
+        if e['origin'] != 'direct' or 'inheritance' in e:
             inherited = e.get('inheritance')
             obj(inherited, ['scope_verified', 'period_verified', 'responsibility_verified'])
             if any(type(v) is not bool for v in inherited.values()): raise ValueError('Invalid inheritance checks')
@@ -93,12 +104,16 @@ def evaluate(data, root=ROOT):
     expected = {r['id']: c['id'] for k in selected for c in [controls[k]] for r in c['criteria']}
     observations = {}
     for o in data['observations']:
-        obj(o, ['criterion_id', 'applicability', 'state', 'evidence_ids'], ['na', 'reason', 'execution'])
+        obj(o, ['criterion_id', 'applicability', 'state', 'evidence_ids', 'test_activity'], ['na', 'reason', 'execution'])
         key = o['criterion_id']
         if key not in expected or key in observations:
             raise ValueError('Unknown or duplicate observation')
         if o['applicability'] not in ['applicable', 'not-applicable', 'unresolved'] or o['state'] not in STATES:
             raise ValueError('Invalid applicability/state; partial is parent-only')
+        if o['test_activity']=='not-performed' and ('execution' in o or o['state']!='not-tested'):
+            raise ValueError('Unperformed procedure cannot claim execution or a tested state')
+        if o['state']=='not-tested' and o['test_activity']!='not-performed':
+            raise ValueError('Not-tested requires confirmed nonperformance')
         unique(o['evidence_ids'])
         if not set(o['evidence_ids']) <= evidence.keys():
             raise ValueError('Dangling evidence reference')
@@ -123,7 +138,7 @@ def evaluate(data, root=ROOT):
     parent_results = {}
     mandatory_fail, uncertainty, mandatory_applicable = False, False, 0
     for key, parent in expected.items():
-        o = observations.get(key, {'applicability': 'unresolved', 'state': 'not-tested', 'evidence_ids': []})
+        o = observations.get(key, {'applicability': 'unresolved', 'state': 'unknown', 'evidence_ids': [], 'test_activity': 'undetermined'})
         app, state = o['applicability'], o['state']
         reasons = []
         if app == 'not-applicable':
@@ -131,6 +146,10 @@ def evaluate(data, root=ROOT):
         elif app == 'unresolved':
             # A violation cannot conclusively fail a requirement whose scope is unresolved.
             state = 'unknown'; reasons.append('Applicability unresolved')
+        elif o['test_activity']=='not-performed':
+            state='not-tested'; reasons.append('Procedure confirmed unperformed')
+        elif o['test_activity']!='performed':
+            state='unknown'; reasons.append('Procedure attempted/incomplete or activity undetermined')
         elif state == 'pass':
             good = [evidence[k] for k in o['evidence_ids'] if evidence[k]['available'] and evidence[k]['sufficient'] and key in evidence[k]['coverage'] and date.fromisoformat(evidence[k]['valid_until']) >= today and (evidence[k]['origin'] == 'direct' or all(evidence[k]['inheritance'].values()))]
             high = any(e['confidence'] == 'high' for e in good)
@@ -159,7 +178,7 @@ def evaluate(data, root=ROOT):
     for mapping in data.get('mappings', []):
         obj(mapping, ['target_id', 'alternatives', 'evidence_delta_ids'])
         target = mapping['target_id']
-        if not isinstance(target, str) or not target.startswith('synthetic:') or target in mapping_results:
+        if not isinstance(target, str) or not target.startswith('synthetic:') or not target[len('synthetic:'):].strip() or target in mapping_results:
             raise ValueError('Only unique synthetic mappings are supported')
         if not isinstance(mapping['alternatives'], list) or not mapping['alternatives']:
             raise ValueError('Mapping needs OR alternatives')
@@ -180,7 +199,19 @@ def evaluate(data, root=ROOT):
     if not set(narratives) <= {controls[k]['domain_id'] for k in selected}:
         raise ValueError('Narrative for unassessed/unknown domain')
     reconciliation = sorted({controls[k]['domain_id'] for k,v in parent_results.items() if v in ['fail','partial']})
+    decision_records={}
+    for key in evaluated:
+        o=observations.get(key)
+        decision_records[key]={'submitted_state':o['state'] if o else None,
+                              'test_activity':o['test_activity'] if o else 'undetermined',
+                              'evidence_ids':o['evidence_ids'] if o else [],
+                              'na':o.get('na') if o else None,
+                              'reason':o.get('reason','') if o else 'Observation missing',
+                              'execution':{k:v for k,v in o.get('execution',{}).items() if k!='observations'} if o else {}}
+    evidence_index={key:{k:e[k] for k in ['id','origin','collected_at','valid_until','confidence','coverage','sufficient','available']} for key,e in evidence.items()}
     return {'assessment_id': data['assessment_id'], 'manifest_sha256': manifest_hash,
+            'assessment_input_sha256':input_hash, 'input_binding_format':'pilot-json-sortkeys-ascii-v1',
+            'as_of':data['as_of'], 'decision_records':decision_records, 'evidence_index':evidence_index,
             'status': 'draft-pilot-result', 'profile': profile, 'overall': overall,
             'criteria': evaluated, 'parents': parent_results, 'counts': counts,
             'mapping_outcomes': mapping_results, 'maturity_narratives': narratives,

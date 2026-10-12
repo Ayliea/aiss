@@ -1,19 +1,21 @@
 {
-  "schema_version": "1",
-  "methodology_version": "2.0.0-pilot.1",
+  "schema_version": "2",
+  "methodology_version": "2.0.0-pilot.2",
   "status": "draft",
-  "evaluator_version": "pilot.1",
+  "evaluator_version": "pilot.2",
   "source_commit": "055f55cceb0c92372178c8d73988c223f806be21",
+  "supersedes_pilot_commit": "e48090b2a09ed6c5a98dd198dde521eb2586a963",
   "source_hashes": {
     "spec/aiss-v1.3.json": "2601bde5e89d53df8f0c22962b471c369185a3d203506d65f10b121bad91162f",
-    "pilot/sources/rfc-0002.md": "31e3c23138c755bcffed5d09b4a7a7cfdaf6205347a52efaedb2f901749c2eae"
+    "pilot/sources/rfc-0002.md": "b3465a2d69adcec61c014e2c4c9f163e6b91571b99c37a843be5e33a24be6ce9"
   },
   "files": {
-    "catalog.json": "b6eecb7cd288af7879153151a768d304aff52d16d24fa5c9520b640a479a3ef3",
-    "procedures.json": "b0b91cfc6e3fc27eca02de0522bf65bb8e42741e98eafc26586bbe62d61d2a18",
-    "criteria.py": "695b6ca88507d0bdccdfcbccc9178837bb33a4c03a34c9ab84a4cef60670e54c",
-    "evaluator.py": "665dc837a672ef0ccef2d98556b7528ef1e2230bb86ad5386717f8eef5d8bea6",
-    "policy.py": "ecc2dc8d754c177c80f7d13f08c07919c3fdee11043034d2fb8e0366ceeda13a",
-    "assessment.schema.json": "bb97d894fef25132255410705a1819e032644d4b18c674a3298a715d75c26ae3"
+    "catalog.json": "d3d2138d444975fed6e06ff84e5e6409412bed5c4f0803d5a93b53ec35913d3b",
+    "procedures.json": "9a613361587b1984815de25ca61c798130921561ccad058c15c8b93341593a08",
+    "criteria.py": "ca2b07b91d3b4420667dffe0c17736612b01f0e99940c764bd9ec0d6eeaa20d0",
+    "evaluator.py": "556e5f6786bafe2a7eadf684a55fa30669ad06d39ba793b66345887330c61de5",
+    "policy.py": "03dafdd76c04afd3d179c608c58c560f8446629ec423d6fc528ce54c2767911e",
+    "assessment.schema.json": "8b35c1b8a2c97cd57016df26e1e3309e73673078174ef45434df6642cd91cfaf",
+    "schema_validation.py": "dda58d3989c3ff150a543c59c920c974041acebaf2f6d93db750d9caa4a8520c"
   }
 }

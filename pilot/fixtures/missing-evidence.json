@@ -1,6 +1,6 @@
 {
   "assessment_id": "synthetic-missing-evidence",
-  "manifest_sha256": "82195527601a91559510c8a38856988047597e7381e54029fb7587824ee4e960",
+  "manifest_sha256": "dd93d060577532d219abc650993c88ce5f2f1e1c0486e80f7da1904c122a4904",
   "as_of": "2026-10-06",
   "profile": {
     "id": "fixture-access-only",
@@ -33,6 +33,7 @@
       "applicability": "applicable",
       "state": "pass",
       "evidence_ids": [],
+      "test_activity": "performed",
       "execution": {
         "procedure_id": "VP-AC-4.1",
         "scope": "Synthetic fixture resource only",
@@ -57,6 +58,7 @@
       "evidence_ids": [
         "ev1"
       ],
+      "test_activity": "performed",
       "execution": {
         "procedure_id": "VP-AC-4.1",
         "scope": "Synthetic fixture resource only",
@@ -81,6 +83,7 @@
       "evidence_ids": [
         "ev1"
       ],
+      "test_activity": "performed",
       "execution": {
         "procedure_id": "VP-AC-4.1",
         "scope": "Synthetic fixture resource only",

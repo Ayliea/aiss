@@ -14,7 +14,7 @@ def baseline():
             'evidence': [{'id': 'ev1', 'origin': 'direct', 'source': 'synthetic-execution-boundary', 'provenance': 'canary test receipt, fictional',
                           'collected_at': '2026-10-06', 'valid_until': '2026-10-07', 'confidence': 'high',
                           'coverage': ids, 'sufficient': True, 'available': True}],
-            'observations': [{'criterion_id': key, 'applicability': 'applicable', 'state': 'pass', 'evidence_ids': ['ev1']} for key in ids]}
+            'observations': [{'criterion_id': key, 'applicability': 'applicable', 'state': 'pass', 'evidence_ids': ['ev1'], 'test_activity':'performed'} for key in ids]}
     for o in data['observations']:
         o['execution'] = dict(procedure_id='VP-AC-4.1', scope='Synthetic fixture resource only', system_version='fixture-v1',
                               population_size=1, sample_ids=['fixture-resource'], selection_method='Full synthetic population',
@@ -36,13 +36,17 @@ def cases():
     case('low-confidence', lambda d: d['evidence'][0].update(confidence='low'), 'indeterminate', 'unknown')
     case('stale-evidence', lambda d: d['evidence'][0].update(valid_until='2026-10-05', collected_at='2026-10-01'), 'indeterminate', 'unknown')
     case('deleted-evidence', lambda d: d['evidence'][0].update(available=False), 'indeterminate', 'unknown')
-    case('unperformed', lambda d: d['observations'][0].update(state='not-tested', evidence_ids=[]), 'indeterminate', 'not-tested')
+    def unperformed(d):
+        o=d['observations'][0];o.pop('execution');o.update(state='not-tested', evidence_ids=[],test_activity='not-performed')
+    case('unperformed', unperformed, 'indeterminate', 'not-tested')
+    case('attempted-without-execution-record', lambda d: (d['observations'][0].pop('execution'),d['observations'][0].update(test_activity='attempted',state='unknown',evidence_ids=[])), 'indeterminate', 'unknown')
+    case('undetermined-test-activity', lambda d: d['observations'][0].update(test_activity='undetermined'), 'indeterminate', 'unknown')
     case('unresolved-scope', lambda d: d['observations'][0].update(applicability='unresolved'), 'indeterminate', 'unknown')
     case('missing-observation', lambda d: d['observations'].pop(), 'indeterminate', 'unknown')
     case('missing-execution', lambda d: d['observations'][0].pop('execution'), 'indeterminate', 'unknown')
     def na(d):
         for o in d['observations']:
-            o.update(applicability='not-applicable', state='not-tested', evidence_ids=[], na={'rationale': 'Synthetic unused capability, explicit fixture', 'owner_approval': 'fixture-owner', 'assessor_approval': 'fixture-assessor'})
+            o.pop('execution');o.update(applicability='not-applicable', state='not-tested', test_activity='not-performed',evidence_ids=[], na={'rationale': 'Synthetic unused capability, explicit fixture', 'owner_approval': 'fixture-owner', 'assessor_approval': 'fixture-assessor'})
     case('approved-na', na, 'no-applicable-mandatory-requirements', 'not-applicable')
     def inherited(d, valid):
         d['evidence'][0].update(origin='inherited', inheritance={'scope_verified': valid, 'period_verified': True, 'responsibility_verified': True})
@@ -75,6 +79,20 @@ def cases():
         catalog = json.loads((ROOT / 'catalog.json').read_text())
         d['profile'] = {'id': 'full-synthetic-draft', 'control_ids': [c['id'] for c in catalog['controls']], 'scope_kind': 'full-draft-baseline'}
     case('full-baseline-incomplete', full, 'indeterminate')
+    def provenance(d, legal_state):
+        catalog=json.loads((ROOT/'catalog.json').read_text())
+        c=next(c for c in catalog['controls'] if c['id']=='AC-6.6')
+        d['profile']['control_ids']=['AC-6.6'];d['profile']['id']='fixture-provenance-only'
+        d['evidence'][0]['coverage']=[r['id'] for r in c['criteria']]
+        template=copy.deepcopy(d['observations'][0]);template['execution']['procedure_id']='VP-AC-6.6'
+        template['execution']['observations']='Synthetic unsupported machine marking, capability recorded and human-readable fallback present; legal requirement evaluated separately'
+        d['observations']=[]
+        for r in c['criteria']:
+            o=copy.deepcopy(template);o['criterion_id']=r['id']
+            if r['id']=='AC-6.6/R06':o['state']=legal_state
+            d['observations'].append(o)
+    case('provenance-capability-fallback',lambda d:provenance(d,'pass'),conformant)
+    case('provenance-unmet-legal-marking',lambda d:provenance(d,'fail'),'not-conformant')
     return rows
 
 

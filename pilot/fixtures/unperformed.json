@@ -1,6 +1,6 @@
 {
   "assessment_id": "synthetic-unperformed",
-  "manifest_sha256": "82195527601a91559510c8a38856988047597e7381e54029fb7587824ee4e960",
+  "manifest_sha256": "dd93d060577532d219abc650993c88ce5f2f1e1c0486e80f7da1904c122a4904",
   "as_of": "2026-10-06",
   "profile": {
     "id": "fixture-access-only",
@@ -33,22 +33,7 @@
       "applicability": "applicable",
       "state": "not-tested",
       "evidence_ids": [],
-      "execution": {
-        "procedure_id": "VP-AC-4.1",
-        "scope": "Synthetic fixture resource only",
-        "system_version": "fixture-v1",
-        "population_size": 1,
-        "sample_ids": [
-          "fixture-resource"
-        ],
-        "selection_method": "Full synthetic population",
-        "period_start": "2026-10-06",
-        "period_end": "2026-10-06",
-        "performed_at": "2026-10-06",
-        "assessor": "fixture-assessor",
-        "observations": "Declared synthetic observation; not a real system execution",
-        "limitations": "Synthetic data; no production coverage"
-      }
+      "test_activity": "not-performed"
     },
     {
       "criterion_id": "AC-4.1/R02",
@@ -57,6 +42,7 @@
       "evidence_ids": [
         "ev1"
       ],
+      "test_activity": "performed",
       "execution": {
         "procedure_id": "VP-AC-4.1",
         "scope": "Synthetic fixture resource only",
@@ -81,6 +67,7 @@
       "evidence_ids": [
         "ev1"
       ],
+      "test_activity": "performed",
       "execution": {
         "procedure_id": "VP-AC-4.1",
         "scope": "Synthetic fixture resource only",

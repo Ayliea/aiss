@@ -1,5 +1,5 @@
 {
-  "schema_version": "1",
+  "schema_version": "2",
   "status": "draft",
   "procedures": [
     {
@@ -936,8 +936,8 @@
         "AC-6.6/R05",
         "AC-6.6/R06"
       ],
-      "actions": "Published-media pipeline, supported provenance mechanisms, transforms and incoming-content checks; synthetic marked/unmarked content.",
-      "acceptance": "Every applicable normative marking/preservation/evaluation/disclosure predicate verified. Unsupported text/provenance capability is unknown/failed as evidenced, not waived; metadata absence does not prove human origin.",
+      "actions": "Published-media pipeline, modality capability register, verified supported provenance mechanisms, transforms, fallback disclosures and incoming-content checks; synthetic marked/unmarked content.",
+      "acceptance": "Under the proposed 2.0 replacement, a documented unsupported machine-readable capability with clear human-readable disclosure satisfies that technical fallback criterion. Verify supported marking/preservation where applicable. Independently required legal marking/disclosure remains mandatory: unmet obligation fails, unresolved evidence is unknown. Metadata absence does not prove human origin.",
       "shared_contract": "RFC0002/C1",
       "execution_fields": [
         "scope",

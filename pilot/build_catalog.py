@@ -8,7 +8,7 @@ from criteria import CRITERIA
 ROOT = Path(__file__).resolve().parent
 PINNED = {
     'spec/aiss-v1.3.json': '2601bde5e89d53df8f0c22962b471c369185a3d203506d65f10b121bad91162f',
-    'pilot/sources/rfc-0002.md': '31e3c23138c755bcffed5d09b4a7a7cfdaf6205347a52efaedb2f901749c2eae',
+    'pilot/sources/rfc-0002.md': 'b3465a2d69adcec61c014e2c4c9f163e6b91571b99c37a843be5e33a24be6ce9',
 }
 
 
@@ -73,14 +73,15 @@ def build():
                            'shared_contract': 'RFC0002/C1',
                            'execution_fields': ['scope', 'version', 'population', 'sample', 'period', 'provenance', 'observations', 'limitations', 'assessor'],
                            'facets': list(facets.values()) if key == 'AC-10.6' else []})
-    catalog = {'schema_version': '1', 'methodology_version': '2.0.0-pilot.1',
+    catalog = {'schema_version': '2', 'methodology_version': '2.0.0-pilot.2',
                'status': 'draft', 'controls': controls}
     write('catalog.json', catalog)
-    write('procedures.json', {'schema_version': '1', 'status': 'draft', 'procedures': procedures})
-    manifest = {'schema_version': '1', 'methodology_version': catalog['methodology_version'],
-                'status': 'draft', 'evaluator_version': 'pilot.1', 'source_commit': '055f55cceb0c92372178c8d73988c223f806be21',
+    write('procedures.json', {'schema_version': '2', 'status': 'draft', 'procedures': procedures})
+    manifest = {'schema_version': '2', 'methodology_version': catalog['methodology_version'],
+                'status': 'draft', 'evaluator_version': 'pilot.2', 'source_commit': '055f55cceb0c92372178c8d73988c223f806be21',
+                'supersedes_pilot_commit': 'e48090b2a09ed6c5a98dd198dde521eb2586a963',
                 'source_hashes': PINNED, 'files': {}}
-    for name in ['catalog.json', 'procedures.json', 'criteria.py', 'evaluator.py', 'policy.py', 'assessment.schema.json']:
+    for name in ['catalog.json', 'procedures.json', 'criteria.py', 'evaluator.py', 'policy.py', 'assessment.schema.json', 'schema_validation.py']:
         manifest['files'][name] = hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
     write('manifest.json', manifest)
     print(f'Exported {len(controls)} controls, {sum(len(c["criteria"]) for c in controls)} draft criteria and {len(procedures)} procedures')

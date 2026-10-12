@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:ayliea:pilot:assessment:1",
+  "$id": "urn:ayliea:pilot:assessment:2",
   "title": "Draft AI Assurance pilot assessment",
   "type": "object",
   "additionalProperties": false,
@@ -53,11 +53,12 @@
     },
     "observation": {
       "type": "object", "additionalProperties": false,
-      "required": ["criterion_id", "applicability", "state", "evidence_ids"],
+      "required": ["criterion_id", "applicability", "state", "evidence_ids", "test_activity"],
       "properties": {
         "criterion_id": {"$ref": "#/$defs/text"},
         "applicability": {"enum": ["applicable", "not-applicable", "unresolved"]},
         "state": {"enum": ["pass", "fail", "unknown", "not-tested"]},
+        "test_activity": {"enum": ["performed", "attempted", "not-performed", "undetermined"]},
         "evidence_ids": {"$ref": "#/$defs/ids"}, "reason": {"type": "string"},
         "execution": {
           "type": "object", "additionalProperties": false,

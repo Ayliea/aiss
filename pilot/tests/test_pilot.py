@@ -31,8 +31,8 @@ def approval(a):
 
 
 def grant(a):
-    keys = ['principal', 'tenant', 'agent', 'tool_version', 'operation', 'resource', 'resource_version', 'policy_version', 'purpose', 'destination']
-    return dict(binding={k: a[k] for k in keys}, parameter_fields=['field'], classes=['A1', 'A2'], expires='2026-10-06T17:00:00Z', revoked=False,
+    keys = ['principal', 'tenant', 'agent', 'tool_version', 'operation', 'resource', 'resource_version', 'policy_version', 'purpose', 'destination', 'currency']
+    return dict(binding={k: a[k] for k in keys}, parameter_rules={'field':{'type':'string','enum':['title']}}, classes=['A1', 'A2'], expires='2026-10-06T17:00:00Z', revoked=False,
                 max_cost_minor=0, max_count=3, used_cost_minor=0, used_count=0)
 
 
@@ -86,7 +86,7 @@ class OutcomeTests(unittest.TestCase):
         for r in c['criteria']:
             d['evidence'][0]['coverage'].append(r['id'])
             x=copy.deepcopy(d['observations'][0]['execution']); x['procedure_id']='VP-AC-5.6'
-            d['observations'].append(dict(criterion_id=r['id'], applicability='applicable', state='fail', evidence_ids=['ev1'], execution=x))
+            d['observations'].append(dict(criterion_id=r['id'], applicability='applicable', state='fail', evidence_ids=['ev1'], test_activity='performed', execution=x))
         result=evaluate(d)
         self.assertEqual(result['overall'], 'conformant-to-declared-draft-profile')
         self.assertEqual(result['parents']['AC-5.6'], 'fail')

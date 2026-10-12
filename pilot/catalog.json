@@ -1,6 +1,6 @@
 {
-  "schema_version": "1",
-  "methodology_version": "2.0.0-pilot.1",
+  "schema_version": "2",
+  "methodology_version": "2.0.0-pilot.2",
   "status": "draft",
   "controls": [
     {
@@ -927,7 +927,7 @@
       "criteria": [
         {
           "id": "AC-6.1/R01",
-          "text": "Human review and approval required before covered consequential AI output use"
+          "text": "Documented human review and approval required before covered consequential AI output use"
         },
         {
           "id": "AC-6.1/R02",
