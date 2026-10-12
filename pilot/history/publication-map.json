@@ -1,0 +1,36 @@
+{
+  "transport": "GitHub Git Data API",
+  "note": "Public commit IDs differ from local review IDs; each listed tree SHA is identical to its local counterpart.",
+  "commits": [
+    {
+      "local_commit": "e48090b2a09ed6c5a98dd198dde521eb2586a963",
+      "published_commit": "f092767eed6d290beeb0b5b9b73130d42721d8fb",
+      "tree_sha": "15174afc02fe585dece7573bfb9b6323df8d217f"
+    },
+    {
+      "local_commit": "701315b2e0954acdd9d4213d9c6e9b2c4b11b2aa",
+      "published_commit": "2eb5297597fb34d91fd0ce01dde3db0489d4c5d5",
+      "tree_sha": "97b63012bbc5f9a32182365e0833c692dab690af"
+    },
+    {
+      "local_commit": "7db20392cdfa0f2e7895f24f998b17689d61265a",
+      "published_commit": "303ce03e500e370a0e877f5c3110d584e15a6a4b",
+      "tree_sha": "d084143d1ce4612dc126d3abaabce692a872a08e"
+    },
+    {
+      "local_commit": "f8d23475015f0410426b54ea8402df0d6fc4dd9c",
+      "published_commit": "8c58d0813831727de3b1b6962bc0afc09699c8de",
+      "tree_sha": "f07d3dcc29707ca66788524890613327b8099f4a"
+    },
+    {
+      "local_commit": "6f782265f0bb897594c03405470219dbf44c53a0",
+      "published_commit": "b3a905c86bcac9147096d5add5a2d25fb53d3d04",
+      "tree_sha": "fc654d0e6b67f154c27acd1e2b66f1a0124867cc"
+    }
+  ],
+  "historical_manifest": {
+    "path": "pilot/history/pilot.1-manifest.json",
+    "sha256": "82195527601a91559510c8a38856988047597e7381e54029fb7587824ee4e960",
+    "published_snapshot": "f092767eed6d290beeb0b5b9b73130d42721d8fb"
+  }
+}

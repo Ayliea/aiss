@@ -52,8 +52,10 @@ class InputContractTests(unittest.TestCase):
         with self.assertRaises(ValueError):evaluate(d)
 
     def test_old_release_input_is_not_silently_upgraded(self):
-        import hashlib,subprocess
-        d=baseline();raw=subprocess.check_output(['git','show','e48090b:pilot/manifest.json'],cwd=ROOT.parent)
+        import hashlib
+        d=baseline();raw=(ROOT/'history/pilot.1-manifest.json').read_bytes()
+        history=json.loads((ROOT/'history/publication-map.json').read_text())
+        self.assertEqual(hashlib.sha256(raw).hexdigest(),history['historical_manifest']['sha256'])
         old=json.loads(raw)
         self.assertEqual(old['evaluator_version'],'pilot.1')
         d['manifest_sha256']=hashlib.sha256(raw).hexdigest()

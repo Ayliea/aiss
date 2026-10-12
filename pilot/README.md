@@ -7,7 +7,11 @@ agent authorization service. Existing v1.3 specifications and scoring stay intac
 Current draft: `2.0.0-pilot.2`, evaluator `pilot.2`, assessment schema `2`.
 The reviewed pilot.1 remains recoverable at commit `e48090b`. This version intentionally
 rejects its old release digest/input contract; no automatic migration or historical
-rescore is provided. Reproduce pilot.1 in a separate checkout of that commit.
+rescore is provided. Local review IDs and public commit IDs are mapped in
+[`history/publication-map.json`](./history/publication-map.json), with identical tree
+hashes. Reproduce pilot.1 using public snapshot `f092767eed6d290beeb0b5b9b73130d42721d8fb`.
+Its original manifest is archived for historical-fixture tests without requiring full
+git history in a downloaded source archive.
 
 Run from the repository root with Python 3.11+ (standard library only):
 
