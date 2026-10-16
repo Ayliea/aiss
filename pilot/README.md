@@ -57,6 +57,11 @@ it cannot prevent real dispatch, make approvals unforgeable, guarantee atomic
 consumption or reconcile external actions. Those require a real execution service
 and integration tests. Reports explicitly identify these limits.
 
+Draft working papers: use the [evaluation scope and evidence supplement](./assessment-supplement.md)
+for assurance targets, lifecycle/access boundaries, failure-path cases, and linked
+scope/evaluation/report templates. These companion records are outside the pilot.2
+input schema and do not change its release identity or authorize live testing.
+
 Files:
 
 - `sources/rfc-0002.md`: published draft proposal snapshot; methodology adoption pending.

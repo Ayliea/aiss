@@ -7,6 +7,7 @@ AISS is the historical name and control identifier. The repository currently con
 ## Start here
 
 - [Draft methodology pilot](./pilot/README.md): outcome evaluator, assessment contracts, synthetic cases and limitations.
+- [Draft assessment working papers](./pilot/assessment-supplement.md): scope, failure-path evaluation and report templates; adoption pending.
 - [Calibration results](./pilot/CALIBRATION.md): reproducible checks and remaining acceptance gates.
 - [Historical v1.3 catalog](./spec/aiss-v1.3.json): 59 controls across 10 domains.
 - [Historical assessment methodology](./methodology.md) and [domain pages](./domains/AC-1-governance-and-policy.md).

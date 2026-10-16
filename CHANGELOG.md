@@ -4,6 +4,13 @@ All notable changes to the Ayliea AI Security Standard are documented in this fi
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows semantic versioning as described in [governance.md](./governance.md).
 
+## [Unreleased]
+
+### Added
+
+- Draft, non-normative evaluation supplement and scope/evaluation/report working papers addressing lifecycle boundaries, assessor access, failure paths, independent action evidence and separate assurance targets (2026-10-16). Includes a synthetic documentary example.
+- No historical control, crosswalk, score, pilot.2 schema, generated contract or release-manifest change. Methodology adoption remains pending; publication of this draft supplement was authorized on 2026-10-16.
+
 ## [1.3] — 2026-06
 
 **Status:** Release Candidate
